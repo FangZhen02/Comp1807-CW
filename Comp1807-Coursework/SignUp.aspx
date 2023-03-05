@@ -1,14 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Comp1807_Coursework.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master"  AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Comp1807_Coursework.WebForm1" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Sign Up</h1>
-    <form id="form1" runat="server">
             <label for="first_name">First Name:</label>
             <input type="text" id="first_name" name="first_name" required><br>
 
@@ -29,7 +22,4 @@
 
             <button type="submit">Submit</button><br />
             <laba1>have an account? <a href="https://www.w3schools.com/">Sign In</a></laba1> <!--wait for sign up page-->
-            
-    </form>
-</body>
-</html>
+</asp:Content>
