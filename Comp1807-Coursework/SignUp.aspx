@@ -29,7 +29,6 @@
                         <h3>Confirm Password</h3>
                         <input type="text" class="form-control mb-4" id="confirm_password" name="confirm_password" required /><br />
                     </div>
-                    
                 </div>
                     <div class="container text-center">
                     <p>
