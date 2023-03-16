@@ -8,38 +8,43 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <h3>First Name</h3>
-                        <asp:TextBox ID="txtFirstName" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <asp:TextBox ID="txtFirstName" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Last Name</h3>
+                        <asp:TextBox ID="txtLastName" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <asp:TextBox ID="txtLastName" runat="server" Height="35px" Width="1165px"></asp:TextBox>
                         <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Email</h3>
+                        <asp:TextBox ID="txtEmail" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <asp:TextBox ID="txtEmail" runat="server" Height="35px" Width="1165px"></asp:TextBox>
                         <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Contact Number</h3>
+                        <asp:TextBox ID="txtContactNum" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <asp:TextBox ID="txtContactNum" runat="server" Height="35px" Width="1165px"></asp:TextBox>
                         <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Password</h3>
+                        <asp:TextBox ID="txtPassword" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <asp:TextBox ID="txtPassword" runat="server" Height="35px" Width="1165px"></asp:TextBox>
                         <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Confirm Password</h3>
+                        <asp:TextBox ID="txtConfirmPassword" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <asp:TextBox ID="txtConfirmPassword" runat="server" Height="35px" Width="1165px"></asp:TextBox>
                         <br />
                     </div>
                 </div>
                     <div class="container text-center">
                     <p>
-                        <asp:Button ID="btnSubmit" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="303px" />
+                        <asp:Button ID="btnSubmit" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="303px" OnClick="btnSubmit_Click" />
                     </p>
                         <strong>Have an account?&nbsp;</strong> <a href="Login.aspx">Login here</a>
                     </div>
