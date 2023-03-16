@@ -20,12 +20,14 @@
             </div>
             
         </div>
+
         <div class="col-md-6">
             <div>
                 <asp:Image ID="loginImg" runat="server" ImageUrl="~\Resource\login-vector.jpg" AlternateText="Login image" />
             </div>
         </div>
     </div>
+    <hr style="border:none; border-top: 2px solid black;">
     <div class="jumbotron">
         <div class="container">
         <h1>Staff</h1>

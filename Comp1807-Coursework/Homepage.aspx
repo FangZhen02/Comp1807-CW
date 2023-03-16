@@ -17,7 +17,7 @@
               <div class="col-md-6">
                   <h2>Book your trip</h2>
                   <p>
-                      <a runat="server" class="btn btn-default" hraf="">Click Here &raquo;</a>
+                      <a runat="server" class="btn btn-default" href="~/Booking">Click Here &raquo;</a>
                   </p>
               </div>              
               
