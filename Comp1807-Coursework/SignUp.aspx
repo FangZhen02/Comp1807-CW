@@ -8,27 +8,33 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <h3>First Name</h3>
-                        <input type="text" class="form-control mb-4" id="first_name" name="first_name" required /><br />
+                        <asp:TextBox ID="txtFirstName" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Last Name</h3>
-                        <input type="text" class="form-control mb-4" id="last_name" name="last_name" required /><br />
+                        <asp:TextBox ID="txtLastName" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Email</h3>
-                        <input type="text" class="form-control mb-4" id="email" name="email" required /><br />
+                        <asp:TextBox ID="txtEmail" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Contact Number</h3>
-                        <input type="text" class="form-control mb-4" id="contact_number" name="contact_number" required /><br />
+                        <asp:TextBox ID="txtContactNum" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Password</h3>
-                        <input type="text" class="form-control mb-4" id="password" name="password" required /><br />
+                        <asp:TextBox ID="txtPassword" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <br />
                     </div>
                     <div class="col-md-6">
                         <h3>Confirm Password</h3>
-                        <input type="text" class="form-control mb-4" id="confirm_password" name="confirm_password" required /><br />
+                        <asp:TextBox ID="txtConfirmPassword" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        <br />
                     </div>
                 </div>
                     <div class="container text-center">
