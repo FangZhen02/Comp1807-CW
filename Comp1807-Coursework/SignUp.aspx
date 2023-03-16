@@ -1,7 +1,8 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master"  AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Comp1807_Coursework.WebForm1" %>
+<%@ Page Language="C#" MasterPageFile="~/Site.Master"  AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Comp1807_Coursework.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Sign Up</h1>
+
             <div class="jumbotron">
                 <div class="container">
                 <div class="row justify-content-center">
@@ -34,12 +35,8 @@
                     <p>
                         <asp:Button ID="btnSubmit" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="303px" />
                     </p>
-
                         <strong>Have an account?&nbsp;</strong> <a href="Login.aspx">Login here</a>
                     </div>
-                </div>
-
-                
+                </div>              
             </div>
-
 </asp:Content>
