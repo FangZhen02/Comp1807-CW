@@ -8,14 +8,26 @@
                 <div class="container">
                     <h1>Customer</h1>
                     <p>Email</p>
-                    <input type="text" class="form-control mb-4" id="email" name="email" required /><br />
+                    <asp:TextBox ID="txtEmail" runat="server" Height="39px" Width="1162px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <br />
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Incorrect email format" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    <br />
                     <p>Password</p>
-                    <input type="text" class="form-control mb-4" id="password" name="password" required /><br />
+                    <asp:TextBox ID="txtPassword" runat="server" Height="39px" TextMode="Password" Width="1162px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <br />
 
-                    <asp:RadioButton ID="terms" runat="server" />&nbsp;I agree to the terms and conditions<br />
+                    <br />
 
-                    <asp:Button ID="btnLogin" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="303px" /><br />
-                    <strong>New? click here to</strong> <a href="SignUp.aspx">Sign Up</a>
+                    <asp:Button ID="btnLogin" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="303px" OnClick="btnLogin_Click" />&nbsp;&nbsp;
+                    <br />
+&nbsp;<br />
+                    <asp:Label ID="lblIncorrect" runat="server" ForeColor="Red" Text="Username or password mismatch" Visible="False"></asp:Label>
+                    <br />
+                    <strong>
+                    <br />
+                    New? click here to</strong> <a href="SignUp.aspx">Sign Up</a>
                 </div>
             </div>
             
@@ -33,11 +45,14 @@
         <h1>Staff</h1>
             <div class="col-md-6">
                 <h3>Staff ID</h3>
-                <input type="text" class="form-control mb-4" id="staffID" name="staffID" required /><br />
+                <asp:TextBox ID="txtStaffEmail" runat="server" Height="35px" Width="1135px"></asp:TextBox>
+                <br />
             </div>
             <div class="col-md-6">
                 <h3>Password</h3>
-                <input type="text" class="form-control mb-4" id="staffPassword" name="staffPassword" required /><br />
+                <asp:TextBox ID="txtStaffPassword" runat="server" Height="35px" Width="1135px"></asp:TextBox>
+                <br />
+                <br />
             </div>
             <div class="container" >
             <asp:Button ID="btnStaffLogin" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="100%" />
