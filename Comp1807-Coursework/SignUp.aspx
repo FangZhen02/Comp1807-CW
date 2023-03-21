@@ -16,7 +16,7 @@
                         <h3>Last Name</h3>
                         <asp:TextBox ID="txtLastName" runat="server" Height="37px" Width="1196px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtLastName" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
-                        <asp:TextBox ID="txtLastName" runat="server" Height="35px" Width="1165px"></asp:TextBox>
+                        
                         <br />
                     </div>
                     <div class="col-md-6">
