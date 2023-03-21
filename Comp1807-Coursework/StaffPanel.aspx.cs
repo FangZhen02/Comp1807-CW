@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Comp1807_Coursework
 {
-    public partial class StaffLogin : System.Web.UI.Page
+    public partial class StaffPanel : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
