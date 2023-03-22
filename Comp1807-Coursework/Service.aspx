@@ -7,27 +7,27 @@
             <div class="jumbotron">
                 <div class="col-md-6">
                     <h4>Pick up</h4>
-                    <input type="text" class="form-control mb-4" id="slot1" name="slot1" required /><br />
+                    <asp:TextBox ID="Pickup" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Destination</h4>
-                    <input type="text" class="form-control mb-4" id="slot2" name="slot2" required /><br />
+                    <asp:TextBox ID="Destination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Time</h4>
-                    <input type="text" class="form-control mb-4" id="slot3" name="slot3" required /><br />
+                    <asp:TextBox ID="Time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Capacity</h4>
-                    <input type="text" class="form-control mb-4" id="slot4" name="slot4" required /><br />
+                    <asp:TextBox ID="Capacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Additional Remarks</h4>
-                    <input type="text" class="form-control mb-4" id="slot5" name="slot5" required /><br />
+                    <asp:TextBox ID="Additinoal" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>...</h4>
-                    <input type="text" class="form-control mb-4" id="slot6" name="slot6" required /><br />
+                    <asp:TextBox ID="extra" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="container">
                     <div class="text-center">

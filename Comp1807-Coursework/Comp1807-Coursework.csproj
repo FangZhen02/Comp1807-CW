@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
     <Content Include="Resource\airport.png" />
+    <Content Include="Resource\cabdriver.png" />
     <Content Include="Resource\car.png" />
     <Content Include="Resource\hotel.png" />
     <Content Include="Resource\login-page-vector.jpg" />
@@ -137,6 +138,7 @@
     <Content Include="Resource\long.png" />
     <Content Include="Resource\meet.png" />
     <Content Include="Resource\rent.png" />
+    <Content Include="Resource\taxi.png" />
     <Content Include="Service.aspx" />
     <Content Include="SignUp.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -170,7 +172,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
-    <Content Include="StaffLogin.aspx" />
+    <Content Include="StaffPanel.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -246,12 +248,12 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="StaffLogin.aspx.cs">
-      <DependentUpon>StaffLogin.aspx</DependentUpon>
+    <Compile Include="StaffPanel.aspx.cs">
+      <DependentUpon>StaffPanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StaffLogin.aspx.designer.cs">
-      <DependentUpon>StaffLogin.aspx</DependentUpon>
+    <Compile Include="StaffPanel.aspx.designer.cs">
+      <DependentUpon>StaffPanel.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
