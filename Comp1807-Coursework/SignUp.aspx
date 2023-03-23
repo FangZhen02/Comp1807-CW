@@ -40,12 +40,13 @@
                     </div>
                     <div class="col-md-6">
                         <h3>Confirm Password</h3>
-                        <asp:TextBox ID="txtConfirmPassword" runat="server" Height="37px" Width="1196px" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtConfirmPassword" runat="server" Height="37px" Width="1196px" CssClass="" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtConfirmPassword" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:Label ID="lblVerifyPassword" runat="server" ForeColor="Red" Text="Password Mismatch" Visible="False"></asp:Label>
                         <br />
                     </div>
                 </div>
+                    <br />
                     <div class="container text-center">
                     <p>
                         <asp:Button ID="btnSubmit" runat="server" Text="Continue" CssClass="btn btn-primary btn-lg" Width="303px" OnClick="btnSubmit_Click" />

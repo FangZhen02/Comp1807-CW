@@ -5074,6 +5074,13 @@ a.badge:focus {
     font-size: 63px;
   }
 }
+
+.my-jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+}
+
+
 .thumbnail {
   display: block;
   padding: 4px;
