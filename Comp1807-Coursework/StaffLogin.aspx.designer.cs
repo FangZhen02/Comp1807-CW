@@ -76,5 +76,15 @@ namespace Comp1807_Coursework
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblIncorrectStaff;
+=======
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+
+namespace Comp1807_Coursework
+{
+    public partial class StaffLogin
+    {
     }
 }
