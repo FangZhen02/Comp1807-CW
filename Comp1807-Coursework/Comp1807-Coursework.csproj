@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddDriver.aspx" />
+    <Content Include="AddMinicab.aspx" />
     <Content Include="App_Data\COMP1807_CW.accdb" />
     <Content Include="Booking.aspx" />
     <Content Include="Contact.aspx" />
@@ -187,6 +188,13 @@
     </Compile>
     <Compile Include="AddDriver.aspx.designer.cs">
       <DependentUpon>AddDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMinicab.aspx.cs">
+      <DependentUpon>AddMinicab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMinicab.aspx.designer.cs">
+      <DependentUpon>AddMinicab.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
