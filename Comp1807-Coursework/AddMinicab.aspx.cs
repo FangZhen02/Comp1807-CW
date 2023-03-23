@@ -8,7 +8,7 @@ using System.Data.OleDb;
 
 namespace Comp1807_Coursework
 {
-    public partial class AddDriver : System.Web.UI.Page
+    public partial class AddMinicab : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,10 +23,10 @@ namespace Comp1807_Coursework
             con.ConnectionString = connString;
             con.Open();
 
-            using (OleDbCommand checkContactCmd = new OleDbCommand("SELECT COUNT(*) FROM Driver WHERE [Contact] = @contact", con))
+            using (OleDbCommand checkRegistrationCmd = new OleDbCommand("SELECT COUNT(*) FROM Minicab WHERE [RegistrationNumber] = @RegNum", con))
             {
-                checkContactCmd.Parameters.AddWithValue("@contact", txtContact.Text);
-                int contactCount = (int)checkContactCmd.ExecuteScalar();
+                checkRegistrationCmd.Parameters.AddWithValue("@RegNum", txtRegistration.Text);
+                int contactCount = (int)checkRegistrationCmd.ExecuteScalar();
 
                 if (contactCount > 0)
                 {
@@ -35,22 +35,22 @@ namespace Comp1807_Coursework
                 else
                 {
                     OleDbCommand cmd = new OleDbCommand();
-                    cmd.CommandText = "INSERT INTO [Driver] ([DriverName], [Contact]) VALUES (@Drivername, @contact)";
-                    cmd.Parameters.AddWithValue("@Drivername", txtDriverName.Text);
-                    cmd.Parameters.AddWithValue("@contact", txtContact.Text);
+                    cmd.CommandText = "INSERT INTO [Minicab] ([RegistrationNumber], [Colour], [Brand], [SeatSize]) VALUES (@regNum, @colour, @brand, @seatsize)";
+                    cmd.Parameters.AddWithValue("@regNum", txtRegistration.Text);
+                    cmd.Parameters.AddWithValue("@colour", txtColor.Text);
+                    cmd.Parameters.AddWithValue("@brand", txtBrand.Text);
+                    cmd.Parameters.AddWithValue("@seatsize", txtSeatSize.Text);
                     cmd.Connection = con;
                     int result = cmd.ExecuteNonQuery();
                     if (result > 0)
                     {
-                        string message = "Driver successfully added.";
-                        string script = "if (window.confirm('" + message + "')) { window.location.href = 'AddDriver.aspx'; }";
+                        string message = "Minicab successfully added.";
+                        string script = "if (window.confirm('" + message + "')) { window.location.href = 'AddMinicab.aspx'; }";
                         ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
                     }
                 }
             }
             con.Close();
-
-           
         }
     }
 }
