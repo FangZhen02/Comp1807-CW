@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Service.aspx.cs" Inherits="Comp1807_Coursework.Service" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1><strong>Travel Service</strong></h1>
+    <h1><strong>Airport Service</strong></h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
@@ -11,7 +11,14 @@
                 </div>
                 <div class="col-md-6">
                     <h4>Destination</h4>
-                    <asp:TextBox ID="txtDestination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <asp:DropDownList ID="AirportOption" runat="server" CssClass="form-control mb-4">
+                        <asp:ListItem Text="London Heathrow Airport (LHR)" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="London Gatwick Airport (LGW)"></asp:ListItem>
+                        <asp:ListItem Text="London Stansted Airport (STN)"></asp:ListItem>
+                        <asp:ListItem Text="London Luton Airport (LTN)"></asp:ListItem>
+                        <asp:ListItem Text="London Sounthend Airport (SEN)"></asp:ListItem>
+                        <asp:ListItem Text="London City Airport (LCY)"></asp:ListItem>
+                    </asp:DropDownList><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Date</h4>
