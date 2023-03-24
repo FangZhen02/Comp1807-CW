@@ -14,20 +14,20 @@
                     <asp:TextBox ID="Destination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
-                    <h4>Time</h4>
-                    <asp:TextBox ID="Time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <h4>Date</h4>
+                    <asp:TextBox ID="Date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
                 </div>
                 <div class="col-md-6">
-                    <h4>Capacity</h4>
+                    <h4>Time</h4>
+                    <asp:TextBox ID="Time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
+                </div>
+                <div class="col-md-6">
+                    <h4>Total passenger</h4>
                     <asp:TextBox ID="Capacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
-                    <h4>Additional Remarks</h4>
-                    <asp:TextBox ID="Additinoal" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                </div>
-                <div class="col-md-6">
-                    <h4>...</h4>
-                    <asp:TextBox ID="extra" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <h4>Size Required</h4>
+                    <asp:TextBox ID="SizeRequired" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="container">
                     <div class="text-center">
