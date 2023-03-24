@@ -51,22 +51,13 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.TextBox Capacity;
 
         /// <summary>
-        /// Additinoal control.
+        /// SizeRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Additinoal;
-
-        /// <summary>
-        /// extra control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox extra;
+        protected global::System.Web.UI.WebControls.TextBox SizeRequired;
 
         /// <summary>
         /// btnLogin control.
