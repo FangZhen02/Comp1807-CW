@@ -14,6 +14,10 @@
                     <asp:TextBox ID="Destination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
+                    <h4>Date</h4>
+                    <asp:TextBox ID="Date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
+                </div>
+                <div class="col-md-6">
                     <h4>Time</h4>
                     <asp:TextBox ID="Time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
                 </div>
