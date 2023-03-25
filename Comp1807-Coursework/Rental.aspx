@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Service.aspx.cs" Inherits="Comp1807_Coursework.Service" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1><strong>Travel Service</strong></h1>
+    <h1><strong>Rental Service</strong></h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
