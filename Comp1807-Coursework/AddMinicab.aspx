@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddMinicab.aspx.cs" Inherits="Comp1807_Coursework.AddMinicab" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <h1><br /></h1>
     <div class="row">
         <div class="col-md-6">
             <div class="container">
-                
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="RegistrationNumber" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="176px" Width="525px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>

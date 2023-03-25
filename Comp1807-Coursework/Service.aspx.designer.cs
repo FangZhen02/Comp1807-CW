@@ -15,58 +15,67 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// Pickup control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pickup;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// Destination control.
+        /// AirportOption control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Destination;
+        protected global::System.Web.UI.WebControls.DropDownList AirportOption;
 
         /// <summary>
-        /// Time control.
+        /// txtFlight control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Time;
+        protected global::System.Web.UI.WebControls.TextBox txtFlight;
 
         /// <summary>
-        /// Capacity control.
+        /// txtDestination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Capacity;
+        protected global::System.Web.UI.WebControls.TextBox txtDestination;
 
         /// <summary>
-        /// Additinoal control.
+        /// txtDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Additinoal;
+        protected global::System.Web.UI.WebControls.TextBox txtDate;
 
         /// <summary>
-        /// extra control.
+        /// txtCapacity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox extra;
+        protected global::System.Web.UI.WebControls.TextBox txtCapacity;
+
+        /// <summary>
+        /// MinicabOption control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList MinicabOption;
 
         /// <summary>
         /// btnLogin control.

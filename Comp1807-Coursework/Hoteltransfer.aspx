@@ -1,17 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Service.aspx.cs" Inherits="Comp1807_Coursework.Service" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1><strong>Travel Service</strong></h1>
+    <h1><strong>Hotel Transfer Service</strong></h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
                 <div class="col-md-6">
                     <h4>Pick up</h4>
-                    <asp:TextBox ID="txtPickup" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <asp:DropDownList ID="AirportOption" runat="server" CssClass="form-control mb-4">
+                        <asp:ListItem Text="London Heathrow Airport (LHR)" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="London Gatwick Airport (LGW)" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="London Stansted Airport (STN)" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="London Luton Airport (LTN)" Value="4"></asp:ListItem>
+                        <asp:ListItem Text="London Sounthend Airport (SEN)" Value="5"></asp:ListItem>
+                        <asp:ListItem Text="London City Airport (LCY)" Value="6"></asp:ListItem>
+                    </asp:DropDownList><br />
                 </div>
                 <div class="col-md-6">
-                    <h4>Destination</h4>
-                    <asp:TextBox ID="txtDestination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <h4>Hotel</h4>
+                    <asp:DropDownList ID="HotelOption" runat="server" CssClass="form-control mb-4">
+                        <asp:ListItem Text="Hilton London Heathrow Airport Hotel (LHR)" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="Copthorne Hotel London Gatwick (LGW)" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="Novotel London Stansted Airport (STN)" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="Courtyard by Marriott Luton Airport (LTN)" Value="4"></asp:ListItem>
+                        <asp:ListItem Text="Skylark Hotel (SEN)" Value="5"></asp:ListItem>
+                        <asp:ListItem Text="Good Hotel London (LCY)" Value="6"></asp:ListItem>
+                    </asp:DropDownList><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Date</h4>

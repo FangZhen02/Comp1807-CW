@@ -108,6 +108,7 @@
     <Content Include="About.aspx" />
     <Content Include="AddDriver.aspx" />
     <Content Include="AddMinicab.aspx" />
+    <Content Include="Airport.aspx" />
     <Content Include="App_Data\COMP1807_CW.accdb" />
     <Content Include="Booking.aspx" />
     <Content Include="Contact.aspx" />
@@ -128,7 +129,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Hoteltransfer.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Meet_Greet.aspx" />
+    <Content Include="Rental.aspx" />
     <Content Include="Resource\airport.png" />
     <Content Include="Resource\cabdriver.png" />
     <Content Include="Resource\car.png" />
@@ -196,6 +200,13 @@
     <Compile Include="AddMinicab.aspx.designer.cs">
       <DependentUpon>AddMinicab.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Airport.aspx.cs">
+      <DependentUpon>Airport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airport.aspx.designer.cs">
+      <DependentUpon>Airport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -236,6 +247,13 @@
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hoteltransfer.aspx.cs">
+      <DependentUpon>Hoteltransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hoteltransfer.aspx.designer.cs">
+      <DependentUpon>Hoteltransfer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -243,7 +261,21 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Meet_Greet.aspx.cs">
+      <DependentUpon>Meet_Greet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Meet_Greet.aspx.designer.cs">
+      <DependentUpon>Meet_Greet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rental.aspx.cs">
+      <DependentUpon>Rental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rental.aspx.designer.cs">
+      <DependentUpon>Rental.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Service.aspx.cs">
       <DependentUpon>Service.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

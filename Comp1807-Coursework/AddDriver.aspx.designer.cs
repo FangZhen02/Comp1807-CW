@@ -16,6 +16,7 @@ namespace Comp1807_Coursework
 
         /// <summary>
         /// GridView1 control.
+        /// Addminicab control
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -33,13 +34,13 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// txtDriverName control.
+        /// txtColor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDriverName;
+        protected global::System.Web.UI.WebControls.TextBox txtColor;
 
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -57,7 +58,16 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContact;
+        protected global::System.Web.UI.WebControls.TextBox txtBrand;
+
+        /// <summary>
+        /// txtSeatSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSeatSize;
 
         /// <summary>
         /// RequiredFieldValidator2 control.
