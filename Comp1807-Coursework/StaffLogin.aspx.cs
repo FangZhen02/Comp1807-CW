@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +14,6 @@ namespace Comp1807_Coursework
         {
 
         }
-
         protected void btnStaffLogin_Click(object sender, EventArgs e)
         {
             string dbPath = Server.MapPath("~/App_Data/COMP1807_CW.accdb");
