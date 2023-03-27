@@ -15,33 +15,30 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// txtPickUp control.
+        /// txtPickup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPickUp;
+        protected global::System.Web.UI.WebControls.TextBox txtPickup;
 
         /// <summary>
-        /// txtDestination control.
+        /// AirportOption control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDestination;
+        protected global::System.Web.UI.WebControls.DropDownList AirportOption;
 
         /// <summary>
+        /// txtDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTime;
-
-        /// <summary>
-        /// txtCapacity control.
         protected global::System.Web.UI.WebControls.TextBox txtDate;
 
         /// <summary>
@@ -51,26 +48,26 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTime;
+
+        /// <summary>
+        /// txtCapacity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCapacity;
 
         /// <summary>
-        /// txtRemark control.
+        /// MinicabOption control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRemark;
-
-        /// <summary>
-        /// txtExtra control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtExtra;
         protected global::System.Web.UI.WebControls.DropDownList MinicabOption;
+
         /// <summary>
         /// btnLogin control.
         /// </summary>
@@ -81,12 +78,12 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.Button btnLogin;
 
         /// <summary>
-        /// lblTesting control.
+        /// loginImg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTesting;
+        protected global::System.Web.UI.WebControls.Image loginImg;
     }
 }
