@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Meet_Greet.aspx.cs" Inherits="Comp1807_Coursework.Service" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Meet_Greet.aspx.cs" Inherits="Comp1807_Coursework.Meet_Greet" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1><strong>Meet & Greet Service</strong></h1>
     <div class="row">

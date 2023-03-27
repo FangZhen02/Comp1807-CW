@@ -27,7 +27,7 @@ namespace Comp1807_Coursework
             try
             {
                 string origin = txtPickUp.Text;
-                string destination = txtDestination.Text;
+                string destination = txtDestination1.Text;
 
                 string url = $"https://maps.googleapis.com/maps/api/distancematrix/json?origins={origin}&destinations={destination}&mode=driving&key=AIzaSyBcPiqhnEgEh6PjUmFyvfsYK_A5nWKYaiI";
 

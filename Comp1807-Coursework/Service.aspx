@@ -4,7 +4,7 @@
     <script type="text/javascript">
         function initMap() {
             var origin = document.getElementById('<%= txtPickUp.ClientID %>').value;
-            var destination = document.getElementById('<%= txtDestination.ClientID %>').value;
+            var destination = document.getElementById('<%= txtDestination1.ClientID %>').value;
 
             var geocoder = new google.maps.Geocoder();
 
@@ -48,7 +48,8 @@
 
                             // Fit the map to the bounds
                             map.fitBounds(bounds);
-                        } else {
+                        }
+                        else {
                             alert('Geocode was not successful for the following reason: ' + status);
                         }
                     });
@@ -65,11 +66,11 @@
             <div class="jumbotron">
                 <div class="col-md-6">
                     <h4>Pick up</h4>
-                    <asp:TextBox ID="txtPickup" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <asp:TextBox ID="txtPickUp" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Destination</h4>
-                    <asp:TextBox ID="txtDestination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <asp:TextBox ID="txtDestination1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Date</h4>

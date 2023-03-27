@@ -11,7 +11,7 @@ namespace Comp1807_Coursework
 {
 
 
-    public partial class Service
+    public partial class Rental
     {
 
         /// <summary>
