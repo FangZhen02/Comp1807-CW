@@ -15,31 +15,13 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// txtName control.
+        /// txtPickup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
-
-        /// <summary>
-        /// AirportOption control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList AirportOption;
-
-        /// <summary>
-        /// txtFlight control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFlight;
+        protected global::System.Web.UI.WebControls.TextBox txtPickup;
 
         /// <summary>
         /// txtDestination control.
@@ -58,6 +40,15 @@ namespace Comp1807_Coursework
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDate;
+
+        /// <summary>
+        /// txtTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTime;
 
         /// <summary>
         /// txtCapacity control.
