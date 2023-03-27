@@ -21,8 +21,7 @@ namespace Comp1807_Coursework
         {
 
         }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
+        protected void CheckMap_Click(object sender, EventArgs e)
         {
             try
             {
@@ -53,8 +52,12 @@ namespace Comp1807_Coursework
             catch (Exception ex)
             {
                 // Handle the exception by displaying an error message to the user
-                lblTesting.Text = "An error occurred: " + ex.Message;
+                lblTesting.Text = ex.Message;
             }
+        }
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

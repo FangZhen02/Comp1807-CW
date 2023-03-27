@@ -72,6 +72,9 @@
                     <h4>Destination</h4>
                     <asp:TextBox ID="txtDestination1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
+                <div class="text-center">
+                <asp:Button ID="CheckMap" runat="server" Text="Check Map" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="CheckMap_Click"/>
+                </div>
                 <div class="col-md-6">
                     <h4>Date</h4>
                     <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
