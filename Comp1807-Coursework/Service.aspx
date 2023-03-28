@@ -62,7 +62,7 @@
     </script>
     <h1><strong>Transport Service</strong></h1>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron" style="margin: 10px;">
                 <h2>Pick up</h2>
