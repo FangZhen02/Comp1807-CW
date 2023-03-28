@@ -65,7 +65,7 @@
     <div class="row">
         <div class="col-md-8">
             <h2><strong>Details</strong></h2>
-            <div class="jumbotron" style="margin: 10px;">
+            <div class="jumbotron"> 
                 <h2>Pick up</h2>
                 <div class="container">
                     <div class="col-md-6">
