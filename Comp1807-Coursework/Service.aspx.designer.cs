@@ -33,13 +33,22 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.TextBox txtAdLine2;
 
         /// <summary>
-        /// txtDestination1 control.
+        /// txtDes1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDestination1;
+        protected global::System.Web.UI.WebControls.TextBox txtDes1;
+
+        /// <summary>
+        /// txtDes2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDes2;
 
         /// <summary>
         /// CheckMap control.
