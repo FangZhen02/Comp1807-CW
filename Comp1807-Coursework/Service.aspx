@@ -63,9 +63,9 @@
     </script>
     <h1><strong>Transport Service</strong></h1>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h2><strong>Details</strong></h2>
-            <div class="jumbotron">
+            <div class="jumbotron"> 
                 <h2>Pick up</h2>
                 <div class="container">
                     <div class="col-md-6">
@@ -115,11 +115,13 @@
                 </div>
             </div>
         </div>
-        <div>
-            <asp:Label ID="lblTesting" runat="server" Text="Show Output"></asp:Label>
+        <div class="col-md-4">
+            <div>
+                <asp:Label ID="lblTesting" runat="server" Text="Show Output"></asp:Label>
+            </div>
+            <div id="map" style="width: 400px; height: 400px;"></div>
         </div>
-        <div id="map" style="width: 400px; height: 400px;"></div>
-        </div>
+    </div>
 
 
 </asp:Content>
