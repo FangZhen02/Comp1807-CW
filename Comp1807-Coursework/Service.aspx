@@ -3,7 +3,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUa8oJZsriD3FtB316C6IMPvqVmK7cFZU"></script>
     <script type="text/javascript">
         function initMap() {
-            var origin = document.getElementById('<%= txtPickUp.ClientID %>').value;
+
+            var origin = document.getElementById('<%= txtAdLine1.ClientID %>').value + document.getElementById('<%= txtAdLine2.ClientID %>').value;
+            
             var destination = document.getElementById('<%= txtDestination1.ClientID %>').value;
 
             var geocoder = new google.maps.Geocoder();
@@ -65,9 +67,14 @@
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
                 <div class="col-md-6">
-                    <h4>Pick up</h4>
-                    <asp:TextBox ID="txtPickUp" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <h2>Pick up</h2>
+                    <h3>Adress line 1</h3>
+                    <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    <h3>Adress line 2</h3>
+                    <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
+                
+
                 <div class="col-md-6">
                     <h4>Destination</h4>
                     <asp:TextBox ID="txtDestination1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
@@ -77,7 +84,7 @@
                 </div>
                 <div class="col-md-6">
                     <h4>Date</h4>
-                    <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
+                    <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
                 </div>
                 <div class="col-md-6">
                     <h4>Time</h4>

@@ -15,13 +15,22 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// txtPickUp control.
+        /// txtAdLine1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPickUp;
+        protected global::System.Web.UI.WebControls.TextBox txtAdLine1;
+
+        /// <summary>
+        /// txtAdLine2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAdLine2;
 
         /// <summary>
         /// txtDestination1 control.
