@@ -86,7 +86,9 @@
                     </div>
                 </div>
                     <div class="text-center">
-                    <asp:Button ID="CheckMap" runat="server" Text="Check Map" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="CheckMap_Click"/>
+                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" OnCheckedChanged="CheckBox1_CheckedChanged" Text="I am sure with the address" />
+&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lblCheck" runat="server" ForeColor="Red" Text="Check this to proceed" Visible="False"></asp:Label>
                     </div>
                 
                 <div class="container">
@@ -100,7 +102,7 @@
                     </div>
                     <div class="col-md-6">
                         <h4>Total passenger</h4>
-                        <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                        <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4" TextMode="Number" max="8"></asp:TextBox><br />
                     </div>
                     <div class="col-md-6">
                         <h4>Minicab</h4>
@@ -112,7 +114,7 @@
                     </div>
                     <div class="container">
                         <div class="text-center">
-                            <asp:Button ID="btnLogin" runat="server" Text="Continue" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="btnLogin_Click"/>
+                            <asp:Button ID="btnContinue" runat="server" Text="Continue" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="btnContinue_Click"/>
                         </div>
                     </div>
                 </div>

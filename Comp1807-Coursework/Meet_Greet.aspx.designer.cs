@@ -51,6 +51,24 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.TextBox txtDestination;
 
         /// <summary>
+        /// checkConfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkConfirm;
+
+        /// <summary>
+        /// lblCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCheck;
+
+        /// <summary>
         /// txtDate control.
         /// </summary>
         /// <remarks>
@@ -58,6 +76,15 @@ namespace Comp1807_Coursework
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDate;
+
+        /// <summary>
+        /// txtTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTime;
 
         /// <summary>
         /// txtCapacity control.
@@ -78,21 +105,21 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.DropDownList MinicabOption;
 
         /// <summary>
-        /// btnLogin control.
+        /// btnContinue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.Button btnContinue;
 
         /// <summary>
-        /// loginImg control.
+        /// lblTesting control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image loginImg;
+        protected global::System.Web.UI.WebControls.Label lblTesting;
     }
 }
