@@ -27,7 +27,9 @@ namespace Comp1807_Coursework
             {
                 String PickUp = txtAdLine1.Text + txtAdLine2.Text;
                 string origin = PickUp;
-                string destination = txtDestination1.Text;
+                string des = txtDes1.Text + txtDes2.Text;
+                string destination = des;
+                    
 
                 string url = $"https://maps.googleapis.com/maps/api/distancematrix/json?origins={origin}&destinations={destination}&mode=driving&key=AIzaSyBcPiqhnEgEh6PjUmFyvfsYK_A5nWKYaiI";
 

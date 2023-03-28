@@ -10,10 +10,6 @@
                     <asp:TextBox ID="txtPickup" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
-                    <h4>Destination</h4>
-                    <asp:TextBox ID="txtDestination" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                </div>
-                <div class="col-md-6">
                     <h4>Date</h4>
                     <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
                 </div>
@@ -28,9 +24,9 @@
                 <div class="col-md-6">
                     <h4>Minicab</h4>
                     <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4">
-                        <asp:ListItem Text="Option 1" Value="1"></asp:ListItem>
-                        <asp:ListItem Text="Option 2" Value="2"></asp:ListItem>
-                        <asp:ListItem Text="Option 3" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="4 seater" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="6 seater" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="8 seater" Value="3"></asp:ListItem>
                     </asp:DropDownList><br />
                 </div>
                 <div class="container">
