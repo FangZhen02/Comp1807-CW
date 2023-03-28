@@ -66,45 +66,51 @@
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
-                <div class="col-md-6">
-                    <h2>Pick up</h2>
-                    <h3>Adress line 1</h3>
-                    <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                    <h3>Adress line 2</h3>
-                    <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                </div>
-                
-
-                <div class="col-md-6">
-                    <h4>Destination</h4>
-                    <asp:TextBox ID="txtDestination1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                </div>
-                <div class="text-center">
-                <asp:Button ID="CheckMap" runat="server" Text="Check Map" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="CheckMap_Click"/>
-                </div>
-                <div class="col-md-6">
-                    <h4>Date</h4>
-                    <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
-                </div>
-                <div class="col-md-6">
-                    <h4>Time</h4>
-                    <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
-                </div>
-                <div class="col-md-6">
-                    <h4>Total passenger</h4>
-                    <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                </div>
-                <div class="col-md-6">
-                    <h4>Minicab</h4>
-                    <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4">
-                        <asp:ListItem Text="Option 1" Value="1"></asp:ListItem>
-                        <asp:ListItem Text="Option 2" Value="2"></asp:ListItem>
-                        <asp:ListItem Text="Option 3" Value="3"></asp:ListItem>
-                    </asp:DropDownList><br/>
-                </div>
+                <h2>Pick up</h2>
                 <div class="container">
+                    <div class="col-md-6">
+                        <h4>Adress line 1</h4>
+                        <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Adress line 2</h4>
+                        <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Destination</h4>
+                        <asp:TextBox ID="txtDestination1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div>
+                </div>
                     <div class="text-center">
-                        <asp:Button ID="btnLogin" runat="server" Text="Continue" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="btnLogin_Click"/>
+                    <asp:Button ID="CheckMap" runat="server" Text="Check Map" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="CheckMap_Click"/>
+                    </div>
+                
+                <div class="container">
+                    <div class="col-md-6">
+                        <h4>Date</h4>
+                        <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Time</h4>
+                        <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Total passenger</h4>
+                        <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Minicab</h4>
+                        <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4">
+                            <asp:ListItem Text="4 seater" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="6 seater" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="8 seater" Value="3"></asp:ListItem>
+                        </asp:DropDownList><br/>
+                    </div>
+                    <div class="container">
+                        <div class="text-center">
+                            <asp:Button ID="btnLogin" runat="server" Text="Continue" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="btnLogin_Click"/>
+                        </div>
                     </div>
                 </div>
             </div>
