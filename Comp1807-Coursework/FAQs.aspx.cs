@@ -13,5 +13,15 @@ namespace Comp1807_Coursework
         {
 
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox1_TextChanged1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
