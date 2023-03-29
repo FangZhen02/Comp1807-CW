@@ -11,7 +11,11 @@ namespace Comp1807_Coursework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            PickUp.Text = (string)Session["pickup"];
+            Destination.Text = (string)Session["destination"];
+            Date.Text = (string)Session["date"];
+            Time.Text = (string)Session["time"];
+            minicab.Text = (string)Session["minicab"];
         }
     }
 }

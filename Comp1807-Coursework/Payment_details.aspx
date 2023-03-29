@@ -7,23 +7,23 @@
                 <div class="container">
                     <div class="col-md-8">
                         <h3><strong>Pick Up</strong></h3>
-                        <asp:Label ID="PickUp" runat="server" text="Pick Up Location"></asp:Label><br />
+                        <asp:Label ID="PickUp" runat="server" text="-"></asp:Label><br />
                     </div>
                     <div class="col-md-4">
                         <h3><strong>Destination</strong></h3>
-                        <asp:Label ID="Destination" runat="server" Text ="Destination"></asp:Label><br />
+                        <asp:Label ID="Destination" runat="server" Text ="-"></asp:Label><br />
                     </div>
                     <div class="col-md-8">
                         <h3><strong>Date</strong></h3>
-                        <asp:Label ID="Date" runat="server" Text="Date"></asp:Label>
+                        <asp:Label ID="Date" runat="server" Text="-"></asp:Label>
                     </div>
                     <div class="col-md-4">
                         <h3><strong>Time</strong></h3>
-                        <asp:Label ID="Time" runat="server" Text="Time"></asp:Label>
+                        <asp:Label ID="Time" runat="server" Text="-"></asp:Label>
                     </div>
                     <div class="col-md-8">
                         <h3><strong>Minicab</strong></h3>
-                        <asp:Label ID="minicab" runat="server" Text="Seat size"></asp:Label>
+                        <asp:Label ID="minicab" runat="server" Text="-"></asp:Label>
                     </div>
                 </div>
             </div>
