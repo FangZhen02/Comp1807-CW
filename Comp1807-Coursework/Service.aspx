@@ -102,7 +102,7 @@
                     </div>
                     <div class="col-md-6">
                         <h4>Total passenger</h4>
-                        <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4" TextMode="Number" max="8"></asp:TextBox><br />
+                        <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4" TextMode="Number" max="8" min="1"></asp:TextBox><br />
                     </div>
                     <div class="col-md-6">
                         <h4>Minicab</h4>
