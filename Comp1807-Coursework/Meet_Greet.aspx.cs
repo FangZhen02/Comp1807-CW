@@ -51,6 +51,7 @@ namespace Comp1807_Coursework
 
                     lblTesting.Text = $"Distance between {origin} and {destination}: {distance}";
                     lblTesting.Visible = true;
+                    Session["distance"] = distance;
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "initMap", "initMap();", true);
                 }
                 catch (Exception ex)
@@ -72,16 +73,17 @@ namespace Comp1807_Coursework
             if (checkConfirm.Checked)
             {
                 lblCheck.Visible = false;
+                Session["servicetype"] = lblServiceType.Text;
                 Session["passengername"] = txtName.Text;
                 Session["pickup"] = AirportOption.SelectedItem.Text;
                 Session["flightnumber"] = txtFlight.Text;
                 Session["destination"] = txtDestination.Text;
                 Session["date"] = txtDate.Text;
                 Session["time"] = txtTime.Text;
-                Session["totalpassenger"] = txtCapacity.Text;
                 Session["minicab"] = MinicabOption.SelectedItem.Text;
+                Session["PreviousPage"] = Request.UrlReferrer.ToString();
 
-                if (txtName.Text != "" && txtFlight.Text != "" && txtDestination.Text != "" && txtDate.Text != "" && txtTime.Text != "" && txtCapacity.Text != "")
+                if (txtName.Text != "" && txtFlight.Text != "" && txtDestination.Text != "" && txtDate.Text != "" && txtTime.Text != "")
                 {
                     Response.Redirect("Payment_details.aspx");
                 }

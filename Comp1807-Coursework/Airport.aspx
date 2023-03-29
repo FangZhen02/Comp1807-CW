@@ -3,11 +3,11 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUa8oJZsriD3FtB316C6IMPvqVmK7cFZU"></script>
     <script type="text/javascript">
         function initMap() {
-            
+
             var origin = document.getElementById('<%= txtAdLine1.ClientID %>').value + document.getElementById('<%= txtAdLine2.ClientID %>').value;
-            var dropdown = document.getElementById('<%= AirportOption.ClientID %>');
-            var selectedOption = dropdown.options[dropdown.selectedIndex];
-            var destination = selectedOption.text;
+            var dropdown2 = document.getElementById('<%= AirportOption.ClientID %>');
+            var selectedOption2 = dropdown2.options[dropdown2.selectedIndex];
+            var destination = selectedOption2.text;
 
             var geocoder = new google.maps.Geocoder();
 
@@ -61,13 +61,19 @@
             });
         }
     </script>
-    <h1><strong>Airport Service</strong></h1>
+    <h1><strong>
+        <asp:Label ID="lblServiceType" runat="server" Text="Airport Service"></asp:Label>
+        </strong></h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
                 <div>
                     <h4>Pick up</h4>
+                    <div class="col-md-6">
+                        <h4>Passenger name</h4><br />
+                        <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div>
                     <div class="col-md-6">
                         <h4>Address line 1</h4><br />
                         <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
@@ -101,10 +107,6 @@
                 <div class="col-md-6">
                     <h4>Time</h4>
                     <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
-                </div>
-                <div class="col-md-6">
-                    <h4>Total passenger</h4>
-                    <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Minicab</h4>

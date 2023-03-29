@@ -50,14 +50,18 @@ namespace Comp1807_Coursework
             if (checkConfirm.Checked)
             {
                 lblCheck.Visible = false;
+                Session["servicetype"] = lblServiceType.Text;
+                Session["passengername"] = txtPassenger.Text;
+                Session["distance"] = "-";
                 Session["pickup"] = txtPickup.Text;
                 Session["destination"] = "-";
                 Session["date"] = txtDate.Text;
                 Session["time"] = txtTime.Text;
-                Session["totalpassenger"] = txtCapacity.Text;
                 Session["minicab"] = MinicabOption.SelectedItem.Text;
+                Session["flightnumber"] = "-";
+                Session["PreviousPage"] = Request.UrlReferrer.ToString();
 
-                if (txtPickup.Text != "" && txtDate.Text != "" && txtTime.Text != "" && txtCapacity.Text != "")
+                if (txtPassenger.Text != "" && txtPickup.Text != "" && txtDate.Text != "" && txtTime.Text != "")
                 {
                     Response.Redirect("Payment_details.aspx");
                 }

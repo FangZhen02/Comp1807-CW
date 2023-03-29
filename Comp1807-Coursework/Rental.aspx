@@ -34,11 +34,17 @@
         }
 
     </script>
-    <h1><strong>Rental Service</strong></h1>
+    <h1>
+        <asp:Label ID="lblServiceType" runat="server" Text="Rental Service"></asp:Label>
+    </h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
+                <div class="col-md-6">
+                    <h4>Passenger name</h4>
+                    <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                </div>
                 <div class="col-md-6">
                     <h4>Pick up</h4>
                     <asp:TextBox ID="txtPickup" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
@@ -55,10 +61,6 @@
                 <div class="col-md-6">
                     <h4>Time</h4>
                     <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
-                </div>
-                <div class="col-md-6">
-                    <h4>Total passenger</h4>
-                    <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Minicab</h4>
