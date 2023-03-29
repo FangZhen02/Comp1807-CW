@@ -11,19 +11,36 @@
     <div class="container">
         <h2>Frequent Asked Questions (FAQs)</h2><br />
         <div class="container">
-            <asp:BulletedList ID="FAQs_list" runat="server" BulletStyle="Numbered" Font-Size="Large">
-                <asp:ListItem>1st FAQ</asp:ListItem>
-                <asp:ListItem>2st FAQ</asp:ListItem>
-                <asp:ListItem>3st FAQ</asp:ListItem>
-                <asp:ListItem>4st FAQ</asp:ListItem>
-                <asp:ListItem>5st FAQ</asp:ListItem>
-                <asp:ListItem>6st FAQ</asp:ListItem>
-                <asp:ListItem>7st FAQ</asp:ListItem>
-                <asp:ListItem>8st FAQ</asp:ListItem>
-                <asp:ListItem>9st FAQ</asp:ListItem>
-                <asp:ListItem>10st FAQ</asp:ListItem>
-            </asp:BulletedList>
+            <ul style="font-size:large">
+                <li><asp:HyperLink runat="server" Text="Link 1" NavigateUrl="~/Page1.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 2" NavigateUrl="~/Page2.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 3" NavigateUrl="~/Page3.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 4" NavigateUrl="~/Page4.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 5" NavigateUrl="~/Page5.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 6" NavigateUrl="~/Page6.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 7" NavigateUrl="~/Page7.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 8" NavigateUrl="~/Page8.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 9" NavigateUrl="~/Page9.aspx" /></li>
+                <li><asp:HyperLink runat="server" Text="Link 10" NavigateUrl="~/Page10.aspx" /></li>
+            </ul>
         </div>
     </div>
 
+    <hr style="border: none; border-top: 2px solid black;" />
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="jumbotron">
+                <p>For further enquiries please contact:</p>
+                <ul>
+                    <li>Email: 
+                        <asp:HyperLink ID="EmailLink" runat="server" NavigateUrl="mailto:example@example.com" Text="example@example.com"></asp:HyperLink>
+                    </li>
+                    <li>Phone: 
+                        <asp:Label ID="PhoneLabel" runat="server" Text="123-456-7890"></asp:Label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </asp:Content>

@@ -15,12 +15,21 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// FAQs_list control.
+        /// EmailLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.BulletedList FAQs_list;
+        protected global::System.Web.UI.WebControls.HyperLink EmailLink;
+
+        /// <summary>
+        /// PhoneLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PhoneLabel;
     }
 }
