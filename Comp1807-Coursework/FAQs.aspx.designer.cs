@@ -15,12 +15,17 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
+        /// Image1 contro
         /// EmailLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+
+        /// <summary>
+        /// HyperLinkSignUp control.
         protected global::System.Web.UI.WebControls.HyperLink EmailLink;
 
         /// <summary>
@@ -30,6 +35,15 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PhoneLabel;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkSignUp;
+
+        /// <summary>
+        /// HyperLinkSignUp0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkSignUp0;
     }
 }
