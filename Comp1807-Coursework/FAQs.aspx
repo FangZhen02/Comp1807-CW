@@ -1,8 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQs.aspx.cs" Inherits="Comp1807_Coursework.FAQs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <div class="container">
+        <h1><strong>Inquiries</strong></h1><br />
+        <p>Brief explainatoin about the page</p>
 
-
+    </div>
+    <hr style="border: none; border-top: 2px solid black;" />
     <div class ="jumbotron">
         <h1 style ="font-family: 'Copperplate Gothic'; text-align:center; ">Our Support Center</h1>
         <h2 class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:center; font-size: small;" >PrivateHire Cars is one of the largest private hire&nbsp; taxi companies in London.</h2>
@@ -66,7 +70,4 @@
         <p class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:left; font-size: medium;" >
             &nbsp;</p>
     </div>
-
-
-
 </asp:Content>

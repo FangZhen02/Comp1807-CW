@@ -15,7 +15,8 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// Image1 control.
+        /// Image1 contro
+        /// EmailLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -25,6 +26,10 @@ namespace Comp1807_Coursework
 
         /// <summary>
         /// HyperLinkSignUp control.
+        protected global::System.Web.UI.WebControls.HyperLink EmailLink;
+
+        /// <summary>
+        /// PhoneLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
