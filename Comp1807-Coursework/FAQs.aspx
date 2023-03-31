@@ -1,18 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FAQs.aspx.cs" Inherits="Comp1807_Coursework.FAQs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <div class="container">
+        <h1><strong>Inquiries</strong></h1><br />
+        <p>Brief explainatoin about the page</p>
 
-
+    </div>
+    <hr style="border: none; border-top: 2px solid black;" />
     <div class ="jumbotron">
         <h1 style ="font-family: 'Copperplate Gothic'; text-align:center; ">Our Support Center</h1>
-        <h2 class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:center; font-size: small;" >PrivateHire Cars is one of the largest private hire&nbsp;taxi companies in London.</h2>
+        <h2 class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:center; font-size: small;" >PrivateHire Cars is one of the largest private hire&nbsp; taxi companies in London.</h2>
+
         <h2 class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:center; font-size: small;" >Our goal is to provide a fast, friendly, and reliable service to out customer. </h2>
         <h2 class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:center; font-size: small;" >Services we provide include Local Journey, Rental, Airport, Meet-Greet &amp; Hotel Transfer.</h2>
         <p class ="lead" style ="font-family: 'Copperplate Gothic Bold'; text-align:left; font-size: 29px;" >
 &nbsp;<asp:Image ID="Image1" runat="server" Height="109px" ImageUrl="~/Resource/faq.png" Width="119px" />
         </p>
         <p style="color: #FF0000">
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How do I create a PrivateHire Cars account ?</p>
+
         <p style="color: #000000; text-align: center; width: 1178px; height: 29px; font-size: small;">
             1. You can sign up an account via our official website.</p>
         <p style="color: #000000; text-align: center; width: 1178px; height: 29px;font-size: small;">
@@ -74,7 +81,4 @@
         <p class ="lead" style ="font-family: 'Copperplate Gothic'; text-align:left; font-size: medium;" >
             &nbsp;</p>
     </div>
-
-
-
 </asp:Content>
