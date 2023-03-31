@@ -69,8 +69,13 @@
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
+                <div class="col-md-12">
+                        <h4><strong>Passenger name</strong></h4>
+                        <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-12"></asp:TextBox><br />
+                    </div>
                 <div>
-                    <h4>Pick up</h4>
+                    <div class="container">
+                     <h4><strong>Pick up</strong></h4>
                     <div class="col-md-6">
                         <h4>Passenger name</h4><br />
                         <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
@@ -83,10 +88,11 @@
                         <h4>Address line 2</h4><strong>Optional</strong>
                         <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                     </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-6">
-                    <h4>Destination</h4>
+                <div class="col-md-12">
+                    <div class="container">
+                    <h4><strong>Destination</strong></h4>
                     <asp:DropDownList ID="AirportOption" runat="server" CssClass="form-control mb-4">
                         <asp:ListItem Text="London Heathrow Airport (LHR)" Value="1"></asp:ListItem>
                         <asp:ListItem Text="London Gatwick Airport (LGW)"></asp:ListItem>
@@ -95,10 +101,10 @@
                         <asp:ListItem Text="London Sounthend Airport (SEN)"></asp:ListItem>
                         <asp:ListItem Text="London City Airport (LCY)"></asp:ListItem>
                     </asp:DropDownList><br />
+                    </div>
                 </div>
                 <div class="text-center">
-                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" />
-&nbsp;&nbsp;&nbsp;
+                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" /><br />
                         <asp:Label ID="lblCheck" runat="server" ForeColor="Red" Text="Check this to proceed" Visible="False"></asp:Label>
                     </div>
                 <div class="col-md-6">
