@@ -13,36 +13,27 @@
     <div class="container">
         <h1><strong>Ride Services</strong></h1><br />
         <div class="row">
-            <asp:Hyperlink ID="localLink" runat="server" NavigateUrl="~\Service.aspx">
-                <div class="col-md-6" style="text-align:center">
-                    <asp:Image ID="local" runat="server" ImageUrl="~/Resource/car.png" Width="40" Height="40" />
-                    <span style="display:block; text-align:center">Local</span><br />
-                </div>
-            </asp:Hyperlink>
-            <asp:HyperLink ID="localLink2" runat="server" NavigateUrl="~\Rental.aspx">
-                <div class="col-md-4"style="text-align:center">
-                    <asp:Image ID="rental" runat="server" ImageUrl="~/Resource/rent.png" Width="40" Height="40" />
-                    <span style="display:block; text-align:center">Rental</span><br />
-                </div>
-            </asp:HyperLink>
-            <asp:HyperLink ID="localLink3" runat="server" NavigateUrl="~\Airport.aspx">
-                <div class="col-md-6" style="text-align:center">
-                    <asp:Image ID="airports" runat="server" ImageUrl="~/Resource/airport.png" Width="40" Height="40" />
-                    <span style="display:block; text-align:center">Airports</span><br />
-                </div>
-            </asp:HyperLink>
-            <asp:hyperlink ID="localLink4" runat="server" NavigateUrl="~/Hoteltransfer.aspx">
-                <div class="col-md-4" style="text-align:center">
-                    <asp:Image ID="hotelTransfer" runat="server" ImageUrl="~/Resource/hotel.png" Width="40" Height="40" />
-                    <span style="display:block; text-align:center">Hotel Transfer</span><br />
-                </div>
-            </asp:hyperlink>
-            <asp:HyperLink ID="localLink5" runat="server" NavigateUrl="~/Meet_Greet.aspx">
-                <div class="col-md-6" style="text-align:center">
-                    <asp:Image ID="meetGreet" runat="server" ImageUrl="~/Resource/meet.png" Width="40" Height="40" />
-                    <span style="display:block; text-align:center">Meet-Greet</span>
-                </div>
-            </asp:HyperLink>
+            <div class="col-md-6" style="text-align:center">
+                <asp:ImageButton ID="local" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/car.png" OnClick="local_Click" />
+                <span style="display:block; text-align:center">Local</span><br />
+            </div>
+            <div class="col-md-4" style="text-align:center">
+                <asp:ImageButton ID="rental" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/rent.png" OnClick="rental_Click" />
+                <span style="display:block; text-align:center">Rental</span><br />
+            </div>
+            <div class="col-md-6" style="text-align:center">
+                <asp:ImageButton ID="airports" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/airport.png" OnClick="airports_Click" />
+                <span style="display:block; text-align:center">Airports</span><br />
+            </div>
+            <div class="col-md-4" style="text-align:center">
+                <asp:ImageButton ID="hotelTransfer" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/hotel.png" OnClick="hotelTransfer_Click" />
+                <span style="display:block; text-align:center">Hotel Transfer</span><br />
+            </div>
+            <div class="col-md-6" style="text-align:center">
+                <asp:ImageButton ID="meetGreet" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/meet.png" OnClick="meetGreet_Click" />
+                <span style="display:block; text-align:center">Meet-Greet</span><br />
+            </div>
+            
         </div>
     </div>
 
