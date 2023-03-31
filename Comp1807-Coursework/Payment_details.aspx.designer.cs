@@ -51,15 +51,6 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.Label Destination;
 
         /// <summary>
-        /// FlightNumber control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FlightNumber;
-
-        /// <summary>
         /// Date control.
         /// </summary>
         /// <remarks>
@@ -87,6 +78,7 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.Label minicab;
 
         /// <summary>
+        /// lblDistance control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -138,6 +130,15 @@ namespace Comp1807_Coursework
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblGrandTotal;
+
+        /// <summary>
+        /// RadioButtonList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
 
         /// <summary>
         /// btnpay control.

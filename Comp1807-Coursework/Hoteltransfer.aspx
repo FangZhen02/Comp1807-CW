@@ -70,7 +70,7 @@
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h4>Passenger Name</h4>
                     <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
                 </div>
@@ -96,11 +96,12 @@
                         <asp:ListItem Text="Good Hotel London (LCY)" Value="6"></asp:ListItem>
                     </asp:DropDownList><br />
                 </div>
-                <div class="text-center">
-                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" />
-&nbsp;&nbsp;&nbsp;
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" /><br />
                         <asp:Label ID="lblCheck" runat="server" ForeColor="Red" Text="Check this to proceed" Visible="False"></asp:Label>
                     </div>
+                </div>
                 <div class="col-md-6">
                     <h4>Date</h4>
                     <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
