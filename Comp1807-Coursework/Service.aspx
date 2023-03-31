@@ -67,10 +67,10 @@
         <div class="col-md-8">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron" style="margin: 10px;">
-                <div class="container">
-                        <h2><strong>Passenger Name</strong></h2><br />
+                    <div class="col-md-12">
+                        <h3>Passenger Name</h3><br />
                         <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                    </div><br/>
+                    </div>
                 <div class="container">
                     <h2>Pick up</h2>
                     <div class="col-md-6">
@@ -81,16 +81,19 @@
                         <h4>Address line 2</h4><strong>Optional</strong>
                         <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                     </div>
-                 <h2>Destination</h2>
-                    <div class="col-md-6">
-                        <h4>Address line1</h4><br />
-                        <asp:TextBox ID="txtDes1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Address line2</h4><strong>Optional</strong>
-                        <asp:TextBox ID="txtDes2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                    </div>
                 </div>
+                    <div class="container">
+                     <h2>Destination</h2>
+                        <div class="col-md-6">
+                            <h4>Address line1</h4><br />
+                            <asp:TextBox ID="txtDes1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Address line2</h4><strong>Optional</strong>
+                            <asp:TextBox ID="txtDes2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                        </div>
+                    </div>
+                
                     <div class="text-center">
                         <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" OnCheckedChanged="CheckBox1_CheckedChanged" Text="I am sure with the address" />
 &nbsp;&nbsp;&nbsp;
@@ -114,7 +117,7 @@
                             <asp:ListItem Text="8 seater" Value="3"></asp:ListItem>
                         </asp:DropDownList><br/>
                     </div>
-                    <div class="container">
+                    <div class="col-md-12">
                         <div class="text-center">
                             <asp:Button ID="btnContinue" runat="server" Text="Continue" CssClass="btn btn-primary" Width="49%" CausesValidation="False" OnClick="btnContinue_Click"/>
                         </div>

@@ -77,6 +77,10 @@
                     <div class="container">
                      <h4><strong>Pick up</strong></h4>
                     <div class="col-md-6">
+                        <h4>Passenger name</h4><br />
+                        <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div>
+                    <div class="col-md-6">
                         <h4>Address line 1</h4><br />
                         <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                     </div>
