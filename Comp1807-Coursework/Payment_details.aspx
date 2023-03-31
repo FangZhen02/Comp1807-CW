@@ -30,6 +30,10 @@
                         <asp:Label ID="Time" runat="server" Text="-"></asp:Label>
                     </div>
                     <div class="col-md-8">
+                        <h3><strong>Time</strong></h3>
+                        <asp:Label ID="Time" runat="server" Text="-"></asp:Label><br />
+                    </div>
+                    <div class="col-md-4">
                         <h3><strong>Minicab</strong></h3>
                         <asp:Label ID="minicab" runat="server" Text="-"></asp:Label>
                     </div>
@@ -46,24 +50,33 @@
                         <asp:LinkButton ID="changeLink" runat="server" OnClick="changeLink_Click">Change</asp:LinkButton>
                     </div>
                 </div>
+                <hr style="border: none; border-top: 2px solid black;" />
+                <div class="container">
+                    <div class="col-md-8">
+                        <h3><strong>Total Amount</strong></h3>
+                        <asp:Label ID="lblTotalAmount" runat="server" Text="-"></asp:Label><br />
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>Discount Given</strong></h3>
+                        <asp:Label ID="lblDiscount" runat="server" Text="15%"></asp:Label><br />
+                    </div>
+                    <div class="col-md-8">
+                        <h3><strong>Total Price</strong></h3>
+                        <asp:Label ID="lblGrandTotal" runat="server" Text="-"></asp:Label><br />
+                    </div>
+                </div><br />
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="jumbotron">
                 <div class="container">
-                    <div class="col-md-12">
-                        <h3><strong>Total Amount</strong></h3>
-                        <asp:Label ID="lblTotalAmount" runat="server" Text="-"></asp:Label><br />
-                    </div>
-                    <div class="col-md-12">
-                        <h3><strong>Discount Given</strong></h3>
-                        <asp:Label ID="lblDiscount" runat="server" Text="15%"></asp:Label><br />
-                    </div>
-                    <div class="col-md-12">
-                        <h3><strong>Total Price</strong></h3>
-                        <asp:Label ID="lblGrandTotal" runat="server" Text="-"></asp:Label><br />
-                    </div>
+                    <h3><strong>Payment Method</strong></h3>
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                        <asp:ListItem>Visa</asp:ListItem>
+                        <asp:ListItem>Master Card</asp:ListItem>
+                        <asp:ListItem>Paypal</asp:ListItem>
+                    </asp:RadioButtonList>
                 </div><br />
 
                 <div class="container">

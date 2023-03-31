@@ -9,6 +9,7 @@
             var selectedOption2 = dropdown2.options[dropdown2.selectedIndex];
             var destination = selectedOption2.text;
 
+
             var geocoder = new google.maps.Geocoder();
 
             // Geocode the origin and destination addresses to get their latitude and longitude
