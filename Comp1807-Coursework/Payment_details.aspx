@@ -6,6 +6,14 @@
             <div class="jumbotron">
                 <div class="container">
                     <div class="col-md-8">
+                        <h3><strong>Service Type</strong></h3>
+                        <asp:Label ID="lblService" runat="server" text="-"></asp:Label><br />
+                    </div>
+                    <div class="col-md-8">
+                        <h3><strong>Passenger name</strong></h3>
+                        <asp:Label ID="lblPassengerName" runat="server" text="-"></asp:Label><br />
+                    </div>
+                    <div class="col-md-8">
                         <h3><strong>Pick Up</strong></h3>
                         <asp:Label ID="PickUp" runat="server" text="-"></asp:Label><br />
                     </div>
@@ -14,35 +22,43 @@
                         <asp:Label ID="Destination" runat="server" Text ="-"></asp:Label><br />
                     </div>
                     <div class="col-md-8">
-                        <h3><strong>Flight number</strong></h3>
-                        <asp:Label ID="FlightNumber" runat="server" Text ="-"></asp:Label><br />
+                        <h3><strong>Date</strong></h3>
+                        <asp:Label ID="Date" runat="server" Text="-"></asp:Label>
                     </div>
                     <div class="col-md-4">
-                        <h3><strong>Date</strong></h3>
-                        <asp:Label ID="Date" runat="server" Text="-"></asp:Label><br />
-                    </div>
-                    <div class="col-md-8">
                         <h3><strong>Time</strong></h3>
-                        <asp:Label ID="Time" runat="server" Text="-"></asp:Label><br />
+                        <asp:Label ID="Time" runat="server" Text="-"></asp:Label>
                     </div>
                     <div class="col-md-4">
                         <h3><strong>Minicab</strong></h3>
-                        <asp:Label ID="minicab" runat="server" Text="-"></asp:Label><br />
+                        <asp:Label ID="minicab" runat="server" Text="-"></asp:Label>
+                    </div>
+                    <div class="col-md-8">
+                        <h3><strong>Distance</strong></h3>
+                        <asp:Label ID="lblDistance" runat="server" Text="Distance testing"></asp:Label>
+                    </div>
+                    <div class="col-md-8">
+                        <h3><strong>Flight number</strong></h3>
+                        <asp:Label ID="lblFlight" runat="server" Text="-"></asp:Label>
+                    </div>
+                    <br />
+                    <div class="col-md-8" style="text-align: right;">
+                        <asp:LinkButton ID="changeLink" runat="server" OnClick="changeLink_Click">Change</asp:LinkButton>
                     </div>
                 </div>
                 <hr style="border: none; border-top: 2px solid black;" />
                 <div class="container">
                     <div class="col-md-8">
                         <h3><strong>Total Amount</strong></h3>
-                        <asp:Label ID="Label4" runat="server" Text="Date"></asp:Label><br />
+                        <asp:Label ID="lblTotalAmount" runat="server" Text="-"></asp:Label><br />
                     </div>
                     <div class="col-md-4">
                         <h3><strong>Discount Given</strong></h3>
-                        <asp:Label ID="Label5" runat="server" Text="Date"></asp:Label><br />
+                        <asp:Label ID="lblDiscount" runat="server" Text="15%"></asp:Label><br />
                     </div>
                     <div class="col-md-8">
                         <h3><strong>Total Price</strong></h3>
-                        <asp:Label ID="Label6" runat="server" Text="Date"></asp:Label><br />
+                        <asp:Label ID="lblGrandTotal" runat="server" Text="-"></asp:Label><br />
                     </div>
                 </div><br />
             </div>

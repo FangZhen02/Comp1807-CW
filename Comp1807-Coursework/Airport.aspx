@@ -3,11 +3,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUa8oJZsriD3FtB316C6IMPvqVmK7cFZU"></script>
     <script type="text/javascript">
         function initMap() {
-            
+
             var origin = document.getElementById('<%= txtAdLine1.ClientID %>').value + document.getElementById('<%= txtAdLine2.ClientID %>').value;
-            var dropdown = document.getElementById('<%= AirportOption.ClientID %>');
-            var selectedOption = dropdown.options[dropdown.selectedIndex];
-            var destination = selectedOption.text;
+            var dropdown2 = document.getElementById('<%= AirportOption.ClientID %>');
+            var selectedOption2 = dropdown2.options[dropdown2.selectedIndex];
+            var destination = selectedOption2.text;
+
 
             var geocoder = new google.maps.Geocoder();
 
@@ -61,13 +62,20 @@
             });
         }
     </script>
-    <h1><strong>Airport Service</strong></h1>
+    <h1><strong>
+        <asp:Label ID="lblServiceType" runat="server" Text="Airport Service"></asp:Label>
+        </strong></h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron">
+                <div class="col-md-12">
+                        <h4><strong>Passenger name</strong></h4>
+                        <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-12"></asp:TextBox><br />
+                    </div>
                 <div>
-                    <h4>Pick up</h4>
+                    <div class="container">
+                     <h4><strong>Pick up</strong></h4>
                     <div class="col-md-6">
                         <h4>Address line 1</h4><br />
                         <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
@@ -76,10 +84,11 @@
                         <h4>Address line 2</h4><strong>Optional</strong>
                         <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                     </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-6">
-                    <h4>Destination</h4>
+                <div class="col-md-12">
+                    <div class="container">
+                    <h4><strong>Destination</strong></h4>
                     <asp:DropDownList ID="AirportOption" runat="server" CssClass="form-control mb-4">
                         <asp:ListItem Text="London Heathrow Airport (LHR)" Value="1"></asp:ListItem>
                         <asp:ListItem Text="London Gatwick Airport (LGW)"></asp:ListItem>
@@ -88,10 +97,10 @@
                         <asp:ListItem Text="London Sounthend Airport (SEN)"></asp:ListItem>
                         <asp:ListItem Text="London City Airport (LCY)"></asp:ListItem>
                     </asp:DropDownList><br />
+                    </div>
                 </div>
                 <div class="text-center">
-                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" />
-&nbsp;&nbsp;&nbsp;
+                        <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" /><br />
                         <asp:Label ID="lblCheck" runat="server" ForeColor="Red" Text="Check this to proceed" Visible="False"></asp:Label>
                     </div>
                 <div class="col-md-6">
@@ -101,10 +110,6 @@
                 <div class="col-md-6">
                     <h4>Time</h4>
                     <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
-                </div>
-                <div class="col-md-6">
-                    <h4>Total passenger</h4>
-                    <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4" TextMode="Number" max="8" min="1"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Minicab</h4>

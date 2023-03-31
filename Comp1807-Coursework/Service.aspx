@@ -60,19 +60,25 @@
             });
         }
     </script>
-    <h1><strong>Transport Service</strong></h1>
+    <h1>
+        <asp:Label ID="lblServiceType" runat="server" Text="Transport Service"></asp:Label>
+    </h1>
     <div class="row">
         <div class="col-md-8">
             <h2><strong>Details</strong></h2>
             <div class="jumbotron" style="margin: 10px;">
-                <h2>Pick up</h2>
                 <div class="container">
+                        <h2><strong>Passenger Name</strong></h2><br />
+                        <asp:TextBox ID="txtPassenger" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                    </div><br/>
+                <div class="container">
+                    <h2>Pick up</h2>
                     <div class="col-md-6">
-                        <h4>Adress line 1</h4><br />
+                        <h4>Address line 1</h4><br />
                         <asp:TextBox ID="txtAdLine1" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                     </div>
                     <div class="col-md-6">
-                        <h4>Adress line 2</h4><strong>Optional</strong>
+                        <h4>Address line 2</h4><strong>Optional</strong>
                         <asp:TextBox ID="txtAdLine2" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
                     </div>
                  <h2>Destination</h2>
@@ -99,10 +105,6 @@
                     <div class="col-md-6">
                         <h4>Time</h4>
                         <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Total passenger</h4>
-                        <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4" TextMode="Number" max="8" min="1"></asp:TextBox><br />
                     </div>
                     <div class="col-md-6">
                         <h4>Minicab</h4>

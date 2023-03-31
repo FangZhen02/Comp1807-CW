@@ -61,7 +61,9 @@
             });
         }
     </script>
-    <h1><strong>Meet & Greet Service</strong></h1>
+    <h1>
+        <asp:Label ID="lblServiceType" runat="server" Text="Meet &amp; Greet Service"></asp:Label>
+    </h1>
     <div class="row">
         <div class="col-md-6">
             <h2><strong>Details</strong></h2>
@@ -101,11 +103,6 @@
                 <div class="col-md-6">
                     <h4>Time</h4>
                     <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4" TextMode="Time" ></asp:TextBox><br /> <%-- need to add a new line of code for the calendar --%>
-
-                </div>
-                <div class="col-md-6">
-                    <h4>Total passenger</h4>
-                    <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control mb-4" TextMode="Number" max="8" min="1"></asp:TextBox><br />
                 </div>
                 <div class="col-md-6">
                     <h4>Minicab</h4>
