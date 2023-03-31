@@ -33,6 +33,15 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.Label Destination;
 
         /// <summary>
+        /// FlightNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FlightNumber;
+
+        /// <summary>
         /// Date control.
         /// </summary>
         /// <remarks>
@@ -60,31 +69,40 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.Label minicab;
 
         /// <summary>
-        /// Amount control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Amount;
+        protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Discount control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Discount;
+        protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// Total control.
+        /// Label6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Total;
+        protected global::System.Web.UI.WebControls.Label Label6;
+
+        /// <summary>
+        /// RadioButtonList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
 
         /// <summary>
         /// btnpay control.

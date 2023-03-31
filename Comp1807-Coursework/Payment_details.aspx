@@ -14,36 +14,49 @@
                         <asp:Label ID="Destination" runat="server" Text ="-"></asp:Label><br />
                     </div>
                     <div class="col-md-8">
-                        <h3><strong>Date</strong></h3>
-                        <asp:Label ID="Date" runat="server" Text="-"></asp:Label>
+                        <h3><strong>Flight number</strong></h3>
+                        <asp:Label ID="FlightNumber" runat="server" Text ="-"></asp:Label><br />
                     </div>
                     <div class="col-md-4">
-                        <h3><strong>Time</strong></h3>
-                        <asp:Label ID="Time" runat="server" Text="-"></asp:Label>
+                        <h3><strong>Date</strong></h3>
+                        <asp:Label ID="Date" runat="server" Text="-"></asp:Label><br />
                     </div>
                     <div class="col-md-8">
+                        <h3><strong>Time</strong></h3>
+                        <asp:Label ID="Time" runat="server" Text="-"></asp:Label><br />
+                    </div>
+                    <div class="col-md-4">
                         <h3><strong>Minicab</strong></h3>
-                        <asp:Label ID="minicab" runat="server" Text="-"></asp:Label>
+                        <asp:Label ID="minicab" runat="server" Text="-"></asp:Label><br />
                     </div>
                 </div>
+                <hr style="border: none; border-top: 2px solid black;" />
+                <div class="container">
+                    <div class="col-md-8">
+                        <h3><strong>Total Amount</strong></h3>
+                        <asp:Label ID="Label4" runat="server" Text="Date"></asp:Label><br />
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>Discount Given</strong></h3>
+                        <asp:Label ID="Label5" runat="server" Text="Date"></asp:Label><br />
+                    </div>
+                    <div class="col-md-8">
+                        <h3><strong>Total Price</strong></h3>
+                        <asp:Label ID="Label6" runat="server" Text="Date"></asp:Label><br />
+                    </div>
+                </div><br />
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="jumbotron">
                 <div class="container">
-                    <div class="col-md-12">
-                        <h3><strong>Total Amount</strong></h3>
-                        <asp:Label ID="Amount" runat="server" Text="Date"></asp:Label><br />
-                    </div>
-                    <div class="col-md-12">
-                        <h3><strong>Discount Given</strong></h3>
-                        <asp:Label ID="Discount" runat="server" Text="Date"></asp:Label><br />
-                    </div>
-                    <div class="col-md-12">
-                        <h3><strong>Total Price</strong></h3>
-                        <asp:Label ID="Total" runat="server" Text="Date"></asp:Label><br />
-                    </div>
+                    <h3><strong>Payment Method</strong></h3>
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                        <asp:ListItem>Visa</asp:ListItem>
+                        <asp:ListItem>Master Card</asp:ListItem>
+                        <asp:ListItem>Paypal</asp:ListItem>
+                    </asp:RadioButtonList>
                 </div><br />
 
                 <div class="container">
