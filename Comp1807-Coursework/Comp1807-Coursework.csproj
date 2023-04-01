@@ -114,6 +114,8 @@
     <Content Include="Airport.aspx" />
     <Content Include="App_Data\COMP1807_CW.accdb" />
     <Content Include="Booking.aspx" />
+    <Content Include="BookingConfirm.aspx" />
+    <Content Include="BookingDetails.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -231,6 +233,20 @@
     </Compile>
     <Compile Include="Booking.aspx.designer.cs">
       <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingConfirm.aspx.cs">
+      <DependentUpon>BookingConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingConfirm.aspx.designer.cs">
+      <DependentUpon>BookingConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDetails.aspx.cs">
+      <DependentUpon>BookingDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingDetails.aspx.designer.cs">
+      <DependentUpon>BookingDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
