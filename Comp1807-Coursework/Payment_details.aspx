@@ -69,7 +69,7 @@
             <div class="jumbotron">
                 <div class="container">
                     <h3><strong>Payment Method</strong></h3>
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                    <asp:RadioButtonList ID="radioPayMethod" runat="server">
                         <asp:ListItem>Visa</asp:ListItem>
                         <asp:ListItem>Master Card</asp:ListItem>
                         <asp:ListItem>Paypal</asp:ListItem>
@@ -78,7 +78,7 @@
 
                 <div class="container">
                     <div class="text-center">
-                        <asp:Button ID="btnpay" runat="server" Text="Pay" CssClass="btn btn-primary" Width="100%"/>
+                        <asp:Button ID="btnpay" runat="server" Text="Pay" CssClass="btn btn-primary" Width="100%" OnClick="btnpay_Click"/>
                     </div>
                 </div>
             </div>
