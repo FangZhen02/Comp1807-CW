@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.OleDb;
+using System.Net;
+using System.Net.Mail;
 
 namespace Comp1807_Coursework
 {
@@ -58,6 +60,20 @@ namespace Comp1807_Coursework
                         string message = "Your account has been successfully created.";
                         string script = "if (window.confirm('" + message + "')) { window.location.href = 'Login.aspx'; }";
                         ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
+
+                        // Send email to customer
+                        MailMessage mail = new MailMessage();
+                        mail.From = new MailAddress("privatehiresup@gmail.com");
+                        mail.To.Add(txtEmail.Text);
+                        mail.Subject = "Registration Confirmation";
+                        mail.Body = "Dear " + txtFirstName.Text + ",\n\nThank you for registering on our website. Your account has been successfully created.\n"+" "+txtEmail.Text+" "+"\n\nBest regards,\nPrivateHire Team";
+
+                        SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                        smtp.Port = 587;
+                        smtp.UseDefaultCredentials = false;
+                        smtp.EnableSsl = true;
+                        smtp.Credentials = new NetworkCredential("privatehiresup@gmail.com", "gcwozivqooacudur");
+                        smtp.Send(mail);
                     }
                 }
                 con.Close();
