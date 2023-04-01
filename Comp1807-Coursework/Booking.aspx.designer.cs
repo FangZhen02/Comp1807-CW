@@ -15,31 +15,13 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
-        /// localLink control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink localLink;
-
-        /// <summary>
         /// local control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image local;
-
-        /// <summary>
-        /// localLink2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink localLink2;
+        protected global::System.Web.UI.WebControls.ImageButton local;
 
         /// <summary>
         /// rental control.
@@ -48,16 +30,7 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image rental;
-
-        /// <summary>
-        /// localLink3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink localLink3;
+        protected global::System.Web.UI.WebControls.ImageButton rental;
 
         /// <summary>
         /// airports control.
@@ -66,16 +39,7 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image airports;
-
-        /// <summary>
-        /// localLink4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink localLink4;
+        protected global::System.Web.UI.WebControls.ImageButton airports;
 
         /// <summary>
         /// hotelTransfer control.
@@ -84,16 +48,7 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image hotelTransfer;
-
-        /// <summary>
-        /// localLink5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink localLink5;
+        protected global::System.Web.UI.WebControls.ImageButton hotelTransfer;
 
         /// <summary>
         /// meetGreet control.
@@ -102,6 +57,6 @@ namespace Comp1807_Coursework
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image meetGreet;
+        protected global::System.Web.UI.WebControls.ImageButton meetGreet;
     }
 }
