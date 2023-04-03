@@ -10,7 +10,8 @@
                     <asp:TextBox ID="txtConfirmEmail" runat="server" CssClass="form-control mb-4"></asp:TextBox>
                 </div>
                 <div class="container" style="text-align:right">
-                    <asp:Button ID="btnComfirm" runat="server" Text="Confirm" CssClass="btn btn-primary" />
+                    <asp:Label ID="lblInvalidEmail" runat="server" ForeColor="#CC0000" Text="Email doest not exist." Visible="False"></asp:Label>
+                    <asp:Button ID="btnComfirm" runat="server" Text="Confirm" CssClass="btn btn-primary" OnClick="btnComfirm_Click" />
                 </div>
             </div>
         </div>

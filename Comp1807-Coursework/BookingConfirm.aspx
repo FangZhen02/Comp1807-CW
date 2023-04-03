@@ -71,6 +71,8 @@
         <div class="container">
             <div class="col-md-12" style="text-align:center">
                 <asp:Button ID="btnPrint" runat="server" CssClass="btn btn-primary" Width="100px" Text="Print" OnClick="btnPrint_Click" />
+            &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnHistory" runat="server" CssClass="btn btn-primary" Width="100px" Text="History" OnClick="btnHistory_Click" />
             </div>
         </div>
     </div>
