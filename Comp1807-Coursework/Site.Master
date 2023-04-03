@@ -53,10 +53,18 @@
                         <li><a runat="server" href="~/Homepage">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/SignUp">SignUp</a></li>
-                        <li><a runat="server" href="~/StaffLogin">StaffLogin</a></li>
                         <li><a runat="server" href="~/FAQs">Help</a></li>
                     </ul>
+                    <div class="pull-right">
+                        <ul class="nav navbar-nav">
+                            
+                            <li>
+                                <asp:Label ID="lblSiteUserName" runat="server" Text=""></asp:Label></li>                    
+                            <li>
+                                <asp:Button ID="btnSignOut" runat="server" Text="SignOut" CssClass="btn btn-primary" OnClick="btnSignOut_Click" Visible="true"/>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
