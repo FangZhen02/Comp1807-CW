@@ -53,8 +53,8 @@
                         <li><a runat="server" href="~/Homepage">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/SignUp">SignUp</a></li>
-                        <li><a runat="server" href="~/StaffLogin">StaffLogin</a></li>
+                        <li><a runat="server" href="~/Login">Sign In</a></li>
+                        <li><a runat="server" href="~/StaffLogin">Staff Login</a></li>
                         <li><a runat="server" href="~/FAQs">Help</a></li>
                     </ul>
                 </div>
