@@ -9,34 +9,89 @@ namespace Comp1807_Coursework
 {
     public partial class Booking : System.Web.UI.Page
     {
+        public string username;
+        public string usertype;
+        public string userID;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            username = (string)Session["username"];
+            usertype = (string)Session["usertype"];
+            userID = (string)Session["userID"];
         }
 
         protected void local_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Service.aspx");
+            if(username == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Session["username"] = username;
+                Session["usertype"] = usertype;
+                Session["userID"] = userID;
+                Response.Redirect("Service.aspx");
+            }
         }
 
         protected void rental_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Rental.aspx");
+            if (username == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Session["username"] = username;
+                Session["usertype"] = usertype;
+                Session["userID"] = userID;
+                Response.Redirect("Rental.aspx");
+            }
         }
 
         protected void airports_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Airport.aspx");
+            if (username == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Session["username"] = username;
+                Session["usertype"] = usertype;
+                Session["userID"] = userID;
+                Response.Redirect("Airport.aspx");
+            }
         }
 
         protected void hotelTransfer_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("HotelTransfer.aspx");
+            if (username == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Session["username"] = username;
+                Session["usertype"] = usertype;
+                Session["userID"] = userID;
+                Response.Redirect("Hoteltransfer.aspx");
+            }
         }
 
         protected void meetGreet_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Meet_Greet.aspx");
+            if (username == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Session["username"] = username;
+                Session["usertype"] = usertype;
+                Session["userID"] = userID;
+                Response.Redirect("Meet_Greet.aspx");
+            }
         }
     }
 }

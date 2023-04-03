@@ -14,9 +14,14 @@ namespace Comp1807_Coursework
 {
     public partial class Meet_Greet : System.Web.UI.Page
     {
+        public string username;
+        public string usertype;
+        public string userID;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            username = (string)Session["username"];
+            usertype = (string)Session["usertype"];
+            userID = (string)Session["userID"];
         }
 
         protected void checkConfirm_CheckedChanged(object sender, EventArgs e)
@@ -72,6 +77,10 @@ namespace Comp1807_Coursework
         {
             if (checkConfirm.Checked)
             {
+                Session["username"] = username;
+                Session["usertype"] = usertype;
+                Session["userID"] = userID;
+
                 lblCheck.Visible = false;
                 Session["servicetype"] = lblServiceType.Text;
                 Session["passengername"] = txtName.Text;

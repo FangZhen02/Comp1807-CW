@@ -32,8 +32,24 @@ namespace Comp1807_Coursework
 
                     if (count > 0)
                     {
+                        connection.Open();
+                        string query2 = "SELECT StaffName FROM Staff WHERE StaffEmail = '" + txtStaffEmail.Text + "'";
+                        OleDbCommand commandUsername = new OleDbCommand(query2, connection);
+                        object resultName = commandUsername.ExecuteScalar();
+
+                        string query3 = "SELECT StaffID FROM Staff WHERE StaffEmail = '" + txtStaffEmail.Text + "'";
+                        OleDbCommand commandStaffID = new OleDbCommand(query3, connection);
+                        object resultID = commandStaffID.ExecuteScalar();
+
+                        string username = resultName.ToString();
+                        string staffID = resultID.ToString();
+                        Session["username"] = username;
+                        Session["usertype"] = "staff";
+                        Session["userID"] = staffID;
+                        connection.Close();
+
                         string message = "Login successful";
-                        string script = "if (window.confirm('" + message + "')) { window.location.href = 'Booking.aspx'; }";
+                        string script = "if (window.confirm('" + message + "')) { window.location.href = 'StaffPanel.aspx'; }";
                         ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
                     }
                     else

@@ -70,7 +70,7 @@
         </div>
         <div class="container">
             <div class="col-md-12" style="text-align:center">
-                <asp:Button ID="btnPrint" runat="server" CssClass="btn btn-primary" Width="100px" Text="Print" />
+                <asp:Button ID="btnPrint" runat="server" CssClass="btn btn-primary" Width="100px" Text="Print" OnClick="btnPrint_Click" />
             </div>
         </div>
     </div>

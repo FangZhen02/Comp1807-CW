@@ -33,6 +33,21 @@ namespace Comp1807_Coursework
 
                     if (count > 0)
                     {
+                        connection.Open();
+                        string query2 = "SELECT FirstName FROM Customer WHERE Email = '" + txtEmail.Text + "'";
+                        OleDbCommand commandUsername = new OleDbCommand(query2, connection);
+                        object resultName = commandUsername.ExecuteScalar();
+
+                        string query3 = "SELECT CustID FROM Customer WHERE Email = '" + txtEmail.Text + "'";
+                        OleDbCommand commandcustID = new OleDbCommand(query3, connection);
+                        object resultID = commandcustID.ExecuteScalar();
+
+                        string username = resultName.ToString();
+                        string custID = resultID.ToString();
+                        Session["username"] = username;
+                        Session["usertype"] = "customer";
+                        Session["userID"] = custID;
+                        connection.Close();
                         string message = "Login successful";
                         string script = "if (window.confirm('" + message + "')) { window.location.href = 'Booking.aspx'; }";
                         ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
