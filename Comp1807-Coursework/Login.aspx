@@ -24,7 +24,7 @@
                     <br />
 &nbsp;<br />
                     <asp:Label ID="lblIncorrect" runat="server" ForeColor="Red" Text="Username or password mismatch" Visible="False"></asp:Label>
-                    <br />
+                    <a href="ForgotPassword.aspx">Forgot Password</a><br />
                     <strong>
                     <br />
                     New? click here to</strong> <a href="SignUp.aspx">Sign Up</a><br />
