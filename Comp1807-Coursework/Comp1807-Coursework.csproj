@@ -116,6 +116,7 @@
     <Content Include="Booking.aspx" />
     <Content Include="BookingConfirm.aspx" />
     <Content Include="BookingDetails.aspx" />
+    <Content Include="BookingHistory.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -126,6 +127,7 @@
     <Content Include="FAQs.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ForgotPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -140,6 +142,7 @@
     <Content Include="Meet_Greet.aspx" />
     <Content Include="Payment_details.aspx" />
     <Content Include="Rental.aspx" />
+    <Content Include="ResetPassword.aspx" />
     <Content Include="Resource\airport.png" />
     <Content Include="Resource\cabdriver.png" />
     <Content Include="Resource\car.png" />
@@ -248,6 +251,13 @@
     <Compile Include="BookingDetails.aspx.designer.cs">
       <DependentUpon>BookingDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BookingHistory.aspx.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingHistory.aspx.designer.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +271,13 @@
     </Compile>
     <Compile Include="FAQs.aspx.designer.cs">
       <DependentUpon>FAQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -307,6 +324,13 @@
     </Compile>
     <Compile Include="Rental.aspx.designer.cs">
       <DependentUpon>Rental.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service.aspx.cs">
       <DependentUpon>Service.aspx</DependentUpon>

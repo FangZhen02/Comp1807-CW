@@ -27,7 +27,8 @@
                     <br />
                     <strong>
                     <br />
-                    New? click here to</strong> <a href="SignUp.aspx">Sign Up</a>
+                    New? click here to</strong> <a href="SignUp.aspx">Sign Up</a><br />
+                    <strong>Are you a staff member?</strong> <a href="StaffLogin.aspx">Click Here</a>
                 </div>
             </div>
             
