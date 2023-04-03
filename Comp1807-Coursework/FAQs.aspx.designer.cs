@@ -15,6 +15,7 @@ namespace Comp1807_Coursework
     {
 
         /// <summary>
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -33,10 +34,6 @@ namespace Comp1807_Coursework
 
         /// <summary>
         /// HyperLinkLogin control.
-        protected global::System.Web.UI.WebControls.HyperLink EmailLink;
-
-        /// <summary>
-        /// PhoneLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -45,13 +42,21 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkLogin;
 
         /// <summary>
-        /// HyperLinkLogin0 control.
+        /// HyperLinkLogin1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLinkLogin0;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkLogin1;
 
+        /// <summary>
+        /// HyperLinkLogin2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkLogin2;
     }
 }
