@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="container" style="text-align:right">
-                    <asp:Button ID="btnReset" runat="server" Text="Rest Password" CssClass="btn btn-primary" />
+                    <asp:Button ID="btnReset" runat="server" Text="Reset Password" CssClass="btn btn-primary" OnClick="btnReset_Click" />
                 </div>
             </div>
         </div>
