@@ -12,11 +12,11 @@
                     </div>
                     <div class="col-md-12">
                         <h3><strong>New Password</strong></h3>
-                        <asp:TextBox ID="txtNewPassword" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                        <asp:TextBox ID="txtNewPassword" runat="server" CssClass="form-control mb-4" TextMode="Password"></asp:TextBox><br />
                     </div>
                     <div class="col-md-12">
                         <h3><strong>Confirm New Password</strong></h3>
-                        <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                        <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control mb-4" TextMode="Password"></asp:TextBox><br />
                     </div>
                 </div>
                 <div class="container" style="text-align:right">
