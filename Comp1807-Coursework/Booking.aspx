@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-6" style="text-align:center">
                 <asp:ImageButton ID="local" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/car.png" OnClick="local_Click" />
-                <span style="display:block; text-align:center">Local</span><br />
+                <span style="display:block; text-align:center">Travel</span><br />
             </div>
             <div class="col-md-4" style="text-align:center">
                 <asp:ImageButton ID="rental" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/rent.png" OnClick="rental_Click" />

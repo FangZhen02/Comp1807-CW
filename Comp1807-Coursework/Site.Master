@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/Homepage">TaxiAlpha</a>
+                    <a class="navbar-brand" runat="server" href="~/Homepage">PrivateHire</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -55,14 +55,18 @@
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><a runat="server" href="~/FAQs">Help</a></li>
                     </ul>
-                    <div class="pull-right">
+                    <div class="pull-right navbar-right">
+                        <br />
                         <ul class="nav navbar-nav">
-                            
                             <li>
-                                <asp:Label ID="lblSiteUserName" runat="server" Text=""></asp:Label></li>                    
+                                <asp:Label ID="lblSiteUserName" runat="server" Text="" CssClass=""></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </li>                    
                             <li>
                                 <asp:Button ID="btnSignOut" runat="server" Text="SignOut" CssClass="btn btn-primary" OnClick="btnSignOut_Click" Visible="true"/>
                             </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+
                         </ul>
                     </div>
                 </div>
