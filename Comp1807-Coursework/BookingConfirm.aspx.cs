@@ -19,6 +19,9 @@ namespace Comp1807_Coursework
         private string minicabID;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+            Response.Cache.SetNoStore();
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
             userID = (string)Session["userID"];

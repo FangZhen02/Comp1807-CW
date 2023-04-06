@@ -13,6 +13,7 @@ namespace Comp1807_Coursework
         private string resetEmail;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Form.DefaultButton = btnReset.UniqueID;
             resetEmail = (string)Session["ResetPasswordEmail"];
         }
 

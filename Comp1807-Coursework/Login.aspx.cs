@@ -12,7 +12,7 @@ namespace Comp1807_Coursework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Page.Form.DefaultButton = btnLogin.UniqueID;
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)

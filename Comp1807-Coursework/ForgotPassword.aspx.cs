@@ -14,7 +14,7 @@ namespace Comp1807_Coursework
         private string UserName;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Page.Form.DefaultButton = btnComfirm.UniqueID;
         }
 
         protected void btnComfirm_Click(object sender, EventArgs e)
