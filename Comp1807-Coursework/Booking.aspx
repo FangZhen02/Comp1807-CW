@@ -11,7 +11,8 @@
     </div>
     <hr style="border: none; border-top: 2px solid black;" />
     <div class="container">
-        <h1><strong>Ride Services</strong></h1><br />
+        <h1><strong>Ride Services&nbsp;&nbsp;&nbsp;
+            </strong></h1><br />
         <div class="row">
             <div class="col-md-6" style="text-align:center">
                 <asp:ImageButton ID="local" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/car.png" OnClick="local_Click" />
