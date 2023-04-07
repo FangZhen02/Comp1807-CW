@@ -19,6 +19,7 @@ namespace Comp1807_Coursework
         public string userID;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Form.DefaultButton = btnContinue.UniqueID;
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
             userID = (string)Session["userID"];

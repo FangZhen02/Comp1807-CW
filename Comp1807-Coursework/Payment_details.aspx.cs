@@ -19,6 +19,7 @@ namespace Comp1807_Coursework
         private string bookingID;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Form.DefaultButton = btnpay.UniqueID;
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
             userID = (string)Session["userID"];
@@ -52,6 +53,7 @@ namespace Comp1807_Coursework
                     double discountOnline = 15;
                     lblDiscount.Text = discountOnline + "%";
                     double grandTotal = totalAmount * (1 - (discountOnline / 100));
+                    grandTotal = Math.Round(grandTotal, 2);
                     lblGrandTotal.Text = "£" + grandTotal.ToString();
                 }
                 else
@@ -59,6 +61,7 @@ namespace Comp1807_Coursework
                     double discountOnline = 0;
                     lblDiscount.Text = discountOnline + "%";
                     double grandTotal = totalAmount * (1 - (discountOnline / 100));
+                    grandTotal = Math.Round(grandTotal, 2);
                     lblGrandTotal.Text = "£" + grandTotal.ToString();
                 }
 
@@ -69,6 +72,7 @@ namespace Comp1807_Coursework
                 double discountOnline = 15;
                 lblDiscount.Text = discountOnline + "%";
                 double grandTotal = 200 * (1 - (discountOnline / 100));
+                grandTotal = Math.Round(grandTotal, 2);
                 lblGrandTotal.Text = "£" + grandTotal.ToString();
             }
         }

@@ -121,7 +121,7 @@
                 </div>
                 <div class="container">
                     <div class="text-center">
-                        <asp:Button ID="btnLogin" runat="server" Text="Continue" CssClass="btn btn-primary" Width="100%" OnClick="btnLogin_Click"/>
+                        <asp:Button ID="btnNext" runat="server" Text="Continue" CssClass="btn btn-primary" Width="100%" OnClick="btnLogin_Click"/>
                     </div>
                 </div>
             </div>
