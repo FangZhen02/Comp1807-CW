@@ -157,6 +157,7 @@ namespace Comp1807_Coursework
                     OleDbCommand commandbookingID = new OleDbCommand(query7, connection);
                     object resultBookingID = commandbookingID.ExecuteScalar();
                     bookingID = resultBookingID.ToString();
+                    Session["bookingID"] = bookingID;
 
                     //insert into payment table
                     string query8 = "INSERT INTO [Payment] ([PaymentMethod], [TotalAmount], [PaymentDate], [BookingDetailsID]) VALUES " + "(@PaymentMethod, @TotalAmount, @PaymentDate, @BookingID)";

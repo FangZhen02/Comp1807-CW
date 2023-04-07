@@ -17,6 +17,7 @@ namespace Comp1807_Coursework
         public string userID;
         private string driverID;
         private string minicabID;
+        private string bookingID;
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.Cache.SetCacheability(HttpCacheability.NoCache);
@@ -25,6 +26,7 @@ namespace Comp1807_Coursework
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
             userID = (string)Session["userID"];
+            bookingID = (string)Session["bookingID"];
 
             lblService.Text = (string)Session["servicetype"];
             lblPassengerName.Text = (string)Session["passengername"];
@@ -69,6 +71,7 @@ namespace Comp1807_Coursework
 
                 connection.Close();
             }
+            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -122,6 +125,12 @@ namespace Comp1807_Coursework
 
             // Print the document
             pd.Print();
+        }
+
+        protected void btnHistory_Click(object sender, EventArgs e)
+        {
+            Session["userID"] = userID;
+            Response.Redirect("BookingHistory.aspx");
         }
     }
 }

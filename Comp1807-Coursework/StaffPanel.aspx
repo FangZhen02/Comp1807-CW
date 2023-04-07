@@ -6,11 +6,11 @@
         <div class="container">
         <div class="row">
             <div class="col-md-6" style="text-align:center">
-                <asp:ImageButton ID="local" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/car.png" OnClick="local_Click" />
-                <span style="display:block; text-align:center">Local</span><br />
+                <asp:ImageButton ID="local" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/electric-car.png" OnClick="local_Click" />
+                <span style="display:block; text-align:center">Travel</span><br />
             </div>
             <div class="col-md-4" style="text-align:center">
-                <asp:ImageButton ID="rental" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/rent.png" OnClick="rental_Click" />
+                <asp:ImageButton ID="rental" runat="server" ImageAlign="Middle" Height="40" Width="40" ImageUrl="~/Resource/car-rental.png" OnClick="rental_Click" />
                 <span style="display:block; text-align:center">Rental</span><br />
             </div>
             <div class="col-md-6" style="text-align:center">
@@ -34,13 +34,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6"style="text-align:center">
-                    <asp:Image ID="driver" runat="server" ImageUrl="~/Resource/cabdriver.png" Width="100" Height="100" /><br /><br />
-                    <asp:Button ID="btnAddDriver" runat="server" Text="Add new driver" CssClass="btn btn-primary btn-lg" Width="303px" OnClick="btnAddDriver_Click" />
+                    <asp:Image ID="driver" runat="server" ImageUrl="~/Resource/cabdriver.png" Width="60" Height="60" /><br /><br />
+                    <asp:Button ID="btnAddDriver" runat="server" Text="Add new driver" CssClass="btn btn-primary btn-lg" Width="202px" OnClick="btnAddDriver_Click" /><br /><br />
                 </div>
 
-                <div class="col-md-5"style="text-align:center">
-                    <asp:Image ID="taxi" runat="server" ImageUrl="~/Resource/taxi.png" Width="100" Height="100" /><br /><br />
-                    <asp:Button ID="btnAddMinicab" runat="server" Text="Add new minicab" CssClass="btn btn-primary btn-lg" Width="303px" OnClick="btnAddMinicab_Click" />
+                <div class="col-md-6"style="text-align:center">
+                    <asp:Image ID="taxi" runat="server" ImageUrl="~/Resource/taxi.png" Width="60" Height="60" /><br /><br />
+                    <asp:Button ID="btnAddMinicab" runat="server" Text="Add new minicab" CssClass="btn btn-primary btn-lg" Width="202px" OnClick="btnAddMinicab_Click" /><br /><br />
+                </div>
+
+                <div class="col-md-6"style="text-align:center">
+                    <asp:Image ID="register" runat="server" ImageUrl="~/Resource/add-user.png" Width="60" Height="60" /><br /><br />
+                    <asp:Button ID="btnRegisterCustomer" runat="server" Text="Customer Register" CssClass="btn btn-primary btn-lg" Width="202px"/>
+                </div>
+
+                <div class="col-md-6"style="text-align:center">
+                    <asp:Image ID="BookingStatus" runat="server" ImageUrl="~/Resource/status.png" Width="60" Height="60" /><br /><br />
+                    <asp:Button ID="btnUpdateStatus" runat="server" Text="Update Status" CssClass="btn btn-primary btn-lg" Width="202px"/>
                 </div>
             </div>
         </div>
