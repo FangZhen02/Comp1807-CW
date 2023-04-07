@@ -124,6 +124,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\mystyle.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CustomerRegister.aspx" />
     <Content Include="FAQs.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -143,9 +144,12 @@
     <Content Include="Payment_details.aspx" />
     <Content Include="Rental.aspx" />
     <Content Include="ResetPassword.aspx" />
+    <Content Include="Resource\add-user.png" />
     <Content Include="Resource\airport.png" />
     <Content Include="Resource\cabdriver.png" />
+    <Content Include="Resource\car-rental.png" />
     <Content Include="Resource\car.png" />
+    <Content Include="Resource\electric-car.png" />
     <Content Include="Resource\faq.png" />
     <Content Include="Resource\hotel.png" />
     <Content Include="Resource\login-page-vector.jpg" />
@@ -157,6 +161,7 @@
     <Content Include="Resource\meet.png" />
     <Content Include="Resource\Paypal_logo.png" />
     <Content Include="Resource\rent.png" />
+    <Content Include="Resource\status.png" />
     <Content Include="Resource\taxi.png" />
     <Content Include="Resource\Visa_Logo.png" />
     <Content Include="Service.aspx" />
@@ -194,6 +199,7 @@
     <Content Include="Site.Master" />
     <Content Include="StaffLogin.aspx" />
     <Content Include="StaffPanel.aspx" />
+    <Content Include="UpdateStatus.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -264,6 +270,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegister.aspx.cs">
+      <DependentUpon>CustomerRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerRegister.aspx.designer.cs">
+      <DependentUpon>CustomerRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="FAQs.aspx.cs">
       <DependentUpon>FAQs.aspx</DependentUpon>
@@ -366,6 +379,13 @@
     </Compile>
     <Compile Include="StaffPanel.aspx.designer.cs">
       <DependentUpon>StaffPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStatus.aspx.cs">
+      <DependentUpon>UpdateStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateStatus.aspx.designer.cs">
+      <DependentUpon>UpdateStatus.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
