@@ -75,6 +75,7 @@ namespace Comp1807_Coursework
                 int rowsAffected = command2.ExecuteNonQuery();
                 if (rowsAffected == 1)
                 {
+                    Session["ResetPasswordEmail"] = txtConfirmEmail.Text;
                     string message = "Temporary password has been sent to your mail.";
                     string script = "if (window.confirm('" + message + "')) { window.location.href = 'ResetPassword.aspx'; }";
                     ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
