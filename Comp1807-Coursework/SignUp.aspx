@@ -35,7 +35,10 @@
                     <div class="col-md-6">
                         <h3>Password</h3>
                         <asp:TextBox ID="txtPassword" runat="server" Height="37px" Width="1196px" TextMode="Password" CssClass="form-control mb-4"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtPassword" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtPassword" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator><br />
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtPassword" 
+                            ErrorMessage="Password must be at least 8 characters and contain at least one uppercase letter,<br /> one lowercase letter, and one number" 
+                            ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"></asp:RegularExpressionValidator>
                         <br />
                     </div>
                     <div class="col-md-6">

@@ -69,22 +69,13 @@ namespace Comp1807_Coursework
         protected global::System.Web.UI.WebControls.Label lblCheck;
 
         /// <summary>
-        /// txtDate control.
+        /// txtDateTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDate;
-
-        /// <summary>
-        /// txtTime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTime;
+        protected global::System.Web.UI.WebControls.TextBox txtDateTime;
 
         /// <summary>
         /// MinicabOption control.
@@ -94,6 +85,15 @@ namespace Comp1807_Coursework
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList MinicabOption;
+
+        /// <summary>
+        /// LuggageLimit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LuggageLimit;
 
         /// <summary>
         /// btnContinue control.

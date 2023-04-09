@@ -12,17 +12,16 @@ namespace Comp1807_Coursework
 {
     public partial class BookingConfirm : System.Web.UI.Page
     {
+
         public string username;
         public string usertype;
         public string userID;
         private string driverID;
         private string minicabID;
         private string bookingID;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Cache.SetCacheability(HttpCacheability.NoCache);
-            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
-            Response.Cache.SetNoStore();
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
             userID = (string)Session["userID"];
@@ -33,8 +32,7 @@ namespace Comp1807_Coursework
             lblFlight.Text = (string)Session["flightnumber"];
             PickUp.Text = (string)Session["pickup"];
             Destination.Text = (string)Session["destination"];
-            Date.Text = (string)Session["date"];
-            Time.Text = (string)Session["time"];
+            Date.Text = (string)Session["datetime"];
             minicab.Text = (string)Session["minicab"];
             lblDistance.Text = (string)Session["distance"];
             lblTotal.Text = (string)Session["totalprice"];
@@ -95,8 +93,6 @@ namespace Comp1807_Coursework
             g.DrawString("Destination: " + Destination.Text, font, Brushes.Black, 100, yPos);
             yPos += 20;
             g.DrawString("Date: " + Date.Text, font, Brushes.Black, 100, yPos);
-            yPos += 20;
-            g.DrawString("Time: " + Time.Text, font, Brushes.Black, 100, yPos);
             yPos += 20;
             g.DrawString("Minicab: " + minicab.Text, font, Brushes.Black, 100, yPos);
             yPos += 20;

@@ -10,6 +10,7 @@ namespace Comp1807_Coursework
 {
     public partial class SiteMaster : MasterPage
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             lblSiteUserName.ForeColor = System.Drawing.Color.White;

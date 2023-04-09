@@ -16,6 +16,7 @@ if (typeof jQuery === 'undefined') {
   }
 }(jQuery);
 
+
 /* ========================================================================
  * Bootstrap: transition.js v3.4.1
  * https://getbootstrap.com/docs/3.4/javascript/#transitions
@@ -58,7 +59,7 @@ if (typeof jQuery === 'undefined') {
     var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
     setTimeout(callback, duration)
     return this
-  }
+    }
 
   $(function () {
     $.support.transition = transitionEnd()
@@ -180,6 +181,13 @@ if (typeof jQuery === 'undefined') {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
+function noBack() {
+    window.history.forward()
+}
+noBack();
+window.onload = noBack;
+window.onpageshow = function (evt) { if (evt.persisted) noBack(); }
+window.onunload = function () { void (0); }
 
 +function ($) {
   'use strict';

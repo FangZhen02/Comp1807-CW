@@ -19,6 +19,15 @@ namespace Comp1807_Coursework
         public string userID;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Form.DefaultButton = txtDateTime.UniqueID;
+            if (!IsPostBack)
+            {
+                DateTime minDateTime = DateTime.Now.AddHours(1);
+                DateTime maxDateTime = DateTime.Now.AddDays(90);
+
+                txtDateTime.Attributes.Add("min", minDateTime.ToString("yyyy-MM-dd HH:mm"));
+                txtDateTime.Attributes.Add("max", maxDateTime.ToString("yyyy-MM-dd HH:mm"));
+            }
             Page.Form.DefaultButton = btnContinue.UniqueID;
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
@@ -73,9 +82,30 @@ namespace Comp1807_Coursework
                 lblTesting.Visible = false;
             }
         }
+        protected void MinicabOption_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int luggageLimit = 0;
+            switch (MinicabOption.SelectedValue)
+            {
+                case "1":
+                    luggageLimit = 4;
+                    break;
+                case "2":
+                    luggageLimit = 6;
+                    break;
+                case "3":
+                    luggageLimit = 8;
+                    break;
+                default:
+                    break;
+            }
+            LuggageLimit.Text = $"You can only bring {luggageLimit} luggage.";
+        }
 
         protected void btnContinue_Click(object sender, EventArgs e)
         {
+            string DateTime = txtDateTime.Text;
+            DateTime = DateTime.Replace("T", " ");
             if (checkConfirm.Checked)
             {
                 Session["username"] = username;
@@ -87,13 +117,12 @@ namespace Comp1807_Coursework
                 Session["passengername"] = txtPassenger.Text;
                 Session["pickup"] = AirportOption.SelectedItem.Text;
                 Session["destination"] = HotelOption.SelectedItem.Text;
-                Session["date"] = txtDate.Text;
-                Session["time"] = txtTime.Text;
+                Session["datetime"] = DateTime;
                 Session["minicab"] = MinicabOption.SelectedItem.Text;
                 Session["flightnumber"] = "-";
                 Session["PreviousPage"] = Request.UrlReferrer.ToString();
 
-                if (txtPassenger.Text != "" && txtDate.Text != "" && txtTime.Text != "")
+                if (txtPassenger.Text != "" && txtDateTime.Text != "" )
                 {
                     Response.Redirect("Payment_details.aspx");
                 }

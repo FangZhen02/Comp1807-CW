@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BookingConfirm.aspx.cs" Inherits="Comp1807_Coursework.BookingConfirm" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
     <h1><strong>Booking Confirmation</strong></h1>
 
     <div class="jumbotron">

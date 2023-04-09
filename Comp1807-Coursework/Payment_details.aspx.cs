@@ -19,6 +19,7 @@ namespace Comp1807_Coursework
         private string bookingID;
         protected void Page_Load(object sender, EventArgs e)
         {
+
             Page.Form.DefaultButton = btnpay.UniqueID;
             username = (string)Session["username"];
             usertype = (string)Session["usertype"];
@@ -31,8 +32,7 @@ namespace Comp1807_Coursework
             lblFlight.Text = (string)Session["flightnumber"];
             PickUp.Text = (string)Session["pickup"];
             Destination.Text = (string)Session["destination"];
-            Date.Text = (string)Session["date"];
-            Time.Text = (string)Session["time"];
+            Date.Text = (string)Session["datetime"];
             minicab.Text = (string)Session["minicab"];
             lblDistance.Text = (string)Session["distance"];
 
@@ -97,8 +97,7 @@ namespace Comp1807_Coursework
                 Session["distance"] = lblDistance.Text;
                 Session["pickup"] = PickUp.Text;
                 Session["destination"] = Destination.Text;
-                Session["date"] = Date.Text;
-                Session["time"] = Time.Text;
+                Session["datetime"] = Date.Text;
                 Session["minicab"] = minicab.Text;
                 Session["flightnumber"] = lblFlight.Text;
                 Session["totalprice"] = lblGrandTotal.Text;
@@ -135,13 +134,12 @@ namespace Comp1807_Coursework
                     commandMinicabAvail.ExecuteNonQuery();
 
                     //insert record to booking table
-                    string query6 = "INSERT INTO [Booking] ([PasName], [CustID], [Date], [Time], [Service], [PickUp], [Destination], [FlightNumber], [Status], [DriverID], [RegistrationNum]) VALUES " + "(@PasName, @CustID, @Date, @Time, @Service, @PickUp, @Destination, @FlightNumber, @Status, @DriverID, @RegNum)";
+                    string query6 = "INSERT INTO [Booking] ([PasName], [CustID], [DateTime], [Service], [PickUp], [Destination], [FlightNumber], [Status], [DriverID], [RegistrationNum]) VALUES " + "(@PasName, @CustID, @DateTime, @Service, @PickUp, @Destination, @FlightNumber, @Status, @DriverID, @RegNum)";
                     OleDbCommand cmd = new OleDbCommand(query6, connection);
 
                     cmd.Parameters.AddWithValue("@PasName", lblPassengerName.Text);
                     cmd.Parameters.AddWithValue("@CustID", userID);
-                    cmd.Parameters.AddWithValue("@Date", Date.Text);
-                    cmd.Parameters.AddWithValue("@Time", Time.Text);
+                    cmd.Parameters.AddWithValue("@DateTime", Date.Text);
                     cmd.Parameters.AddWithValue("@Service", lblService.Text);
                     cmd.Parameters.AddWithValue("@PickUp", PickUp.Text);
                     cmd.Parameters.AddWithValue("@Destination", Destination.Text);
@@ -176,9 +174,7 @@ namespace Comp1807_Coursework
                 }
 
 
-                string message = "Payment Successfull";
-                string script = "if (window.confirm('" + message + "')) { window.location.href = 'BookingConfirm.aspx'; }";
-                ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
+                Response.Redirect("BookingConfirm.aspx");
             }
             else
             {

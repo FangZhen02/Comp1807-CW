@@ -101,21 +101,18 @@
                     </div>
                 
                 <div class="container">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h4>Date</h4>
-                        <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Time</h4>
-                        <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br />
+                        <asp:TextBox ID="txtDateTime" type="datetime-local" runat="server" CssClass="form-control mb-4" ></asp:TextBox><br /> 
                     </div>
                     <div class="col-md-6">
                         <h4>Minicab</h4>
-                        <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4">
+                        <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4" OnSelectedIndexChanged="MinicabOption_SelectedIndexChanged" AutoPostBack="true">
                             <asp:ListItem Text="4 seater" Value="1"></asp:ListItem>
                             <asp:ListItem Text="6 seater" Value="2"></asp:ListItem>
                             <asp:ListItem Text="8 seater" Value="3"></asp:ListItem>
-                        </asp:DropDownList><br/>
+                        </asp:DropDownList>
+                            <asp:Label ID="LuggageLimit" runat="server" ForeColor="Red">You can only bring 4 luggage</asp:Label><br /><br /><br />
                     </div>
                     <div class="col-md-12">
                         <div class="text-center">

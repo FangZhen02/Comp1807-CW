@@ -61,7 +61,21 @@
                 }
             });
         }
+        function validateDateTime() {
+            var inputDate = new Date($('#<%= txtDateTime.ClientID %>').val());
+            var currentDate = new Date();
+
+            // Check if the selected date and time is less than the current date and time
+            if (inputDate < currentDate) {
+                $('#<%= lblError.ClientID %>').text('Please select a date and time that is greater than or equal to the current date and time.');
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+
     </script>
+
     <h1><strong>
         <asp:Label ID="lblServiceType" runat="server" Text="Airport Service"></asp:Label>
         </strong></h1>
@@ -103,25 +117,24 @@
                         <asp:CheckBox ID="checkConfirm" runat="server" AutoPostBack="True" Text="I am sure with the address" OnCheckedChanged="checkConfirm_CheckedChanged" /><br />
                         <asp:Label ID="lblCheck" runat="server" ForeColor="Red" Text="Check this to proceed" Visible="False"></asp:Label>
                     </div>
-                <div class="col-md-6">
-                    <h4>Date</h4>
-                    <asp:TextBox ID="txtDate" type="date" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
-                </div>
-                <div class="col-md-6">
-                    <h4>Time</h4>
-                    <asp:TextBox ID="txtTime" type="time" runat="server" CssClass="form-control mb-4"></asp:TextBox><br /> 
+                <div class="col-md-12">
+                <asp:TextBox ID="txtDateTime" runat="server" type="datetime-local" CssClass="form-control mb-4">
+                </asp:TextBox>                
+                <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <h4>Minicab</h4>
-                    <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4">
+                    <asp:DropDownList ID="MinicabOption" runat="server" CssClass="form-control mb-4" OnSelectedIndexChanged="MinicabOption_SelectedIndexChanged" AutoPostBack="true">
                         <asp:ListItem Text="4 seater" Value="1"></asp:ListItem>
                         <asp:ListItem Text="6 seater" Value="2"></asp:ListItem>
                         <asp:ListItem Text="8 seater" Value="3"></asp:ListItem>
-                    </asp:DropDownList><br />
+                    </asp:DropDownList>
+                    <asp:Label ID="LuggageLimit" runat="server" ForeColor="Red">You can only bring 4 luggage</asp:Label><br /><br /><br />
                 </div>
+                
                 <div class="container">
                     <div class="text-center">
-                        <asp:Button ID="btnNext" runat="server" Text="Continue" CssClass="btn btn-primary" Width="100%" OnClick="btnLogin_Click"/>
+                        <asp:Button ID="btnNext" runat="server" Text="Continue" CssClass="btn btn-primary" Width="100%" OnClick="btnLogin_Click" OnClientClick="return validateDateTime();"/>
                     </div>
                 </div>
             </div>
