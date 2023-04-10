@@ -151,6 +151,7 @@
     <Content Include="Resource\car.png" />
     <Content Include="Resource\electric-car.png" />
     <Content Include="Resource\faq.png" />
+    <Content Include="Resource\homepage.gif" />
     <Content Include="Resource\hotel.png" />
     <Content Include="Resource\login-page-vector.jpg" />
     <Content Include="Resource\login-vector.jpg" />
@@ -160,6 +161,7 @@
     <Content Include="Resource\MasterCard-Logo.png" />
     <Content Include="Resource\meet.png" />
     <Content Include="Resource\Paypal_logo.png" />
+    <Content Include="Resource\pexels-dimitar-germanov-3233144-1920x1080-60fps_converted.gif" />
     <Content Include="Resource\rent.png" />
     <Content Include="Resource\status.png" />
     <Content Include="Resource\taxi.png" />
