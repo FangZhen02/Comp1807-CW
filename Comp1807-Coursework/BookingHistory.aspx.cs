@@ -21,7 +21,7 @@ namespace Comp1807_Coursework
             string dbPath = Server.MapPath("~/App_Data/COMP1807_CW.accdb");
             string connString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dbPath};Persist Security Info=False;";
 
-            string query = "SELECT [Booking.BookingDetailsID] as [BookingID], [Booking.PasName] as [Passenger Name], [Date], [Time], [Service], [PickUp] as [Pick Up], [Destination], [FlightNumber] as [Flight number], [Status], [Booking.RegistrationNum] as [Car number], [Minicab.Colour] as [Colour], [Minicab.Brand] as [Brand], [Driver.DriverName] as [Driver]" +
+            string query = "SELECT [Booking.BookingDetailsID] as [BookingID], [Booking.PasName] as [Passenger Name], [DateTime], [Service], [PickUp] as [Pick Up], [Destination], [FlightNumber] as [Flight number], [Status], [Booking.RegistrationNum] as [Car number], [Minicab.Colour] as [Colour], [Minicab.Brand] as [Brand], [Driver.DriverName] as [Driver]" +
                            "FROM ((Booking INNER JOIN Minicab ON Booking.RegistrationNum = Minicab.RegistrationNum) " +
                            "INNER JOIN Driver ON Booking.DriverID = Driver.DriverID) " +
                            "WHERE Booking.CustID = @UserID";
@@ -59,12 +59,10 @@ namespace Comp1807_Coursework
 
                 if (dataTable2.Rows.Count > 0)
                 {
-                    DateTime bookingDate = DateTime.Parse(dataTable2.Rows[0]["Date"].ToString());
+                    DateTime bookingDate = DateTime.Parse(dataTable2.Rows[0]["DateTime"].ToString());
                     string date1 = bookingDate.ToShortDateString();
-                    DateTime bookingTime = DateTime.Parse(dataTable2.Rows[0]["Time"].ToString());
-                    string time1 = bookingTime.ToShortTimeString();
 
-                    DateTime bookingDateTime = DateTime.Parse(date1 + " " + time1);
+                    DateTime bookingDateTime = DateTime.Parse(date1);
                     TimeSpan timeDifference = DateTime.Now.Subtract(bookingDateTime);
 
 
@@ -126,12 +124,10 @@ namespace Comp1807_Coursework
 
                 if (dataTable2.Rows.Count > 0)
                 {
-                    DateTime bookingDate = DateTime.Parse(dataTable2.Rows[0]["Date"].ToString());
+                    DateTime bookingDate = DateTime.Parse(dataTable2.Rows[0]["DateTime"].ToString());
                     string date1 = bookingDate.ToShortDateString();
-                    DateTime bookingTime = DateTime.Parse(dataTable2.Rows[0]["Time"].ToString());
-                    string time1 = bookingTime.ToShortTimeString();
 
-                    DateTime bookingDateTime = DateTime.Parse(date1 + " " + time1);
+                    DateTime bookingDateTime = DateTime.Parse(date1);
                     TimeSpan timeDifference = DateTime.Now.Subtract(bookingDateTime);
 
 

@@ -112,7 +112,6 @@ namespace Comp1807_Coursework
                 Session["username"] = username;
                 Session["usertype"] = usertype;
                 Session["userID"] = userID;
-
                 lblCheck.Visible = false;
                 Session["servicetype"] = lblServiceType.Text;
                 Session["passengername"] = txtPassenger.Text;
