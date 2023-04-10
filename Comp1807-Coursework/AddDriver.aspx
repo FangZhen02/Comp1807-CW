@@ -6,14 +6,14 @@
         <div class="col-md-6">
             <div class="container">
                 
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="DriverID" DataSourceID="SqlDataSource1" GridLines="Horizontal" Height="185px" Width="425px">
+                <br />
+                <asp:Label ID="lblDeleteFail" runat="server" ForeColor="Red" Text="Row cannot be deleted because the driver has a booking assigned" Visible="False"></asp:Label>
+                
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="DriverID" DataSourceID="SqlDataSource2" GridLines="Horizontal" Height="185px" Width="425px" OnRowDeleting="GridView1_RowDeleting" >
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                        <asp:BoundField DataField="DriverID" HeaderText="DriverID" InsertVisible="False" ReadOnly="True" SortExpression="DriverID" Visible="False" />
                         <asp:BoundField DataField="DriverName" HeaderText="DriverName" SortExpression="DriverName" />
                         <asp:BoundField DataField="Contact" HeaderText="Contact" SortExpression="Contact" />
-                        <asp:BoundField DataField="Rating" HeaderText="Rating" SortExpression="Rating" Visible="False" />
-                        <asp:BoundField DataField="BookingID" HeaderText="BookingID" SortExpression="BookingID" Visible="False" />
                     </Columns>
                     <FooterStyle BackColor="White" ForeColor="#333333" />
                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
@@ -25,7 +25,7 @@
                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
                     <SortedDescendingHeaderStyle BackColor="#275353" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1 %>" DeleteCommand="DELETE FROM [Driver] WHERE [DriverID] = ?" InsertCommand="INSERT INTO [Driver] ([DriverID], [DriverName], [Contact], [Rating], [BookingID]) VALUES (?, ?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString1.ProviderName %>" SelectCommand="SELECT * FROM [Driver]" UpdateCommand="UPDATE [Driver] SET [DriverName] = ?, [Contact] = ?, [Rating] = ?, [BookingID] = ? WHERE [DriverID] = ?">
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1 %>" DeleteCommand="DELETE FROM [Driver] WHERE [DriverID] = ?" InsertCommand="INSERT INTO [Driver] ([DriverID], [DriverName], [Contact], [Availability]) VALUES (?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString1.ProviderName %>" SelectCommand="SELECT * FROM [Driver]" UpdateCommand="UPDATE [Driver] SET [DriverName] = ?, [Contact] = ?, [Availability] = ? WHERE [DriverID] = ?">
                     <DeleteParameters>
                         <asp:Parameter Name="DriverID" Type="Int32" />
                     </DeleteParameters>
@@ -33,14 +33,12 @@
                         <asp:Parameter Name="DriverID" Type="Int32" />
                         <asp:Parameter Name="DriverName" Type="String" />
                         <asp:Parameter Name="Contact" Type="Int32" />
-                        <asp:Parameter Name="Rating" Type="String" />
-                        <asp:Parameter Name="BookingID" Type="String" />
+                        <asp:Parameter Name="Availability" Type="Boolean" />
                     </InsertParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="DriverName" Type="String" />
                         <asp:Parameter Name="Contact" Type="Int32" />
-                        <asp:Parameter Name="Rating" Type="String" />
-                        <asp:Parameter Name="BookingID" Type="String" />
+                        <asp:Parameter Name="Availability" Type="Boolean" />
                         <asp:Parameter Name="DriverID" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
@@ -55,20 +53,21 @@
                     <div class="col-md-6">
                         <h4>Driver Name</h4>
                         <asp:TextBox ID="txtDriverName" runat="server" CssClass="form-control mb-4" Width="170px" ValidationGroup="1"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDriverName" ErrorMessage="Required" ForeColor="Red" ValidationGroup="1"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDriverName" ErrorMessage="Required" ForeColor="Red" ValidationGroup="2"></asp:RequiredFieldValidator>
                         <br />
                     </div>
                     <div class="col-md-6">
                         <h4>Contact</h4>
-                        <asp:TextBox ID="txtContact" runat="server" CssClass="form-control mb-4" Width="167px" ValidationGroup="1"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtContact" ErrorMessage="Required" ForeColor="Red" ValidationGroup="1"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtContact" runat="server" CssClass="form-control mb-4" Width="167px" ValidationGroup="1" TextMode="Url"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtContact" ErrorMessage="Required" ForeColor="Red" ValidationGroup="2"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtContact" ErrorMessage="Invalid phone number" ForeColor="Red" ValidationExpression="^[0-9+-]{10,13}$" ValidationGroup="2"></asp:RegularExpressionValidator>
                         <br />
                         <asp:Label ID="lblExists" runat="server" ForeColor="Red" Text="Contact already exist" Visible="False"></asp:Label>
                         <br />
                     </div>
                     <div class="container">
                     <div class="text-center">
-                        <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="btn btn-primary" Width="100%" OnClick="btnAdd_Click" ValidationGroup="1"/>
+                        <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="btn btn-primary" Width="100%" OnClick="btnAdd_Click" ValidationGroup="2" UseSubmitBehavior="False"/>
                     </div>
                 </div>
                 </div>

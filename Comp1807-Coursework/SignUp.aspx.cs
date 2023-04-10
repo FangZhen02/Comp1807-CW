@@ -12,8 +12,10 @@ namespace Comp1807_Coursework
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        private string usertype;
         protected void Page_Load(object sender, EventArgs e)
         {
+            usertype = (string)Session["usertype"];
             Page.Form.DefaultButton = btnSubmit.UniqueID;
         }
 
@@ -57,9 +59,6 @@ namespace Comp1807_Coursework
                     int result = cmd.ExecuteNonQuery();
                     if (result > 0)
                     {
-                        string message = "Your account has been successfully created.";
-                        string script = "if (window.confirm('" + message + "')) { window.location.href = 'Login.aspx'; }";
-                        ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
 
                         // Send email to customer
                         MailMessage mail = new MailMessage();
@@ -74,7 +73,21 @@ namespace Comp1807_Coursework
                         smtp.EnableSsl = true;
                         smtp.Credentials = new NetworkCredential("privatehiresup@gmail.com", "gcwozivqooacudur");
                         smtp.Send(mail);
+
+                        if (usertype == "staff")
+                        {
+                            string message = "Customer account has been successfully created.";
+                            string script = "if (window.confirm('" + message + "')) { window.location.href = 'StaffPanel.aspx'; }";
+                            ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
+                        }
+                        else
+                        {
+                            string message = "Your account has been successfully created.";
+                            string script = "if (window.confirm('" + message + "')) { window.location.href = 'Login.aspx'; }";
+                            ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
+                        }
                     }
+                    
                 }
                 con.Close();
             }
