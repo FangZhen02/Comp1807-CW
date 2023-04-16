@@ -14,9 +14,11 @@ namespace Comp1807_Coursework
     public partial class BookingHistory : System.Web.UI.Page
     {
         private string userID;
+        private string usertype;
         protected void Page_Load(object sender, EventArgs e)
         {
             userID = (string)Session["userID"];
+            usertype = (string)Session["usertype"];
 
             string dbPath = Server.MapPath("~/App_Data/COMP1807_CW.accdb");
             string connString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dbPath};Persist Security Info=False;";

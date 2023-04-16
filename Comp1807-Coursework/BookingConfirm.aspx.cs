@@ -126,6 +126,7 @@ namespace Comp1807_Coursework
         protected void btnHistory_Click(object sender, EventArgs e)
         {
             Session["userID"] = userID;
+            Session["usertype"] = usertype;
             Response.Redirect("BookingHistory.aspx");
         }
     }
