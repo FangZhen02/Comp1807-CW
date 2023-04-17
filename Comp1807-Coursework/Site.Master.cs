@@ -18,10 +18,17 @@ namespace Comp1807_Coursework
             if (usertype == "customer")
             {
                 bookingHistoryItem.Visible = true;
+                staffPanelItem.Visible = false;
+            }
+            else if(usertype == "staff")
+            {
+                bookingHistoryItem.Visible = false;
+                staffPanelItem.Visible = true;
             }
             else
             {
-                bookingHistoryItem.Visible = false; 
+                bookingHistoryItem.Visible = false;
+                staffPanelItem.Visible = false;
             }
 
             lblSiteUserName.ForeColor = System.Drawing.Color.White;
@@ -32,7 +39,7 @@ namespace Comp1807_Coursework
             }
             else
             {
-                lblSiteUserName.Text = (string)Session["username"];
+                lblSiteUserName.Text = (string)Session["username"] + "  (" + (string)Session["usertype"] + ")";
                 btnSignOut.Text = "SignOut";
             }
         }

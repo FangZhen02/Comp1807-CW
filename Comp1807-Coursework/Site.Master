@@ -55,20 +55,30 @@
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><a runat="server" href="~/FAQs">Help</a></li>
                         <li id="bookingHistoryItem" runat="server"><a href="BookingHistory.aspx">Booking History</a></li>
+                        <li id="staffPanelItem" runat="server"><a href="StaffPanel.aspx">Staff Panel</a></li>
+                        
                     </ul>
-                    <div class="pull-right navbar-right">
-                        <br />
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <asp:Label ID="lblSiteUserName" runat="server" Text="" CssClass=""></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </li>                    
-                            <li>
-                                <asp:Button ID="btnSignOut" runat="server" Text="SignOut" CssClass="btn btn-primary" OnClick="btnSignOut_Click" Visible="true"/>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-
-                        </ul>
+                    <div class="container">
+                    <div class="row">
+                        <div class="navbar-right">
+                            <div class="col-md-2">
+                                <ul class="nav navbar-nav"> 
+                                    <li>
+                                        <asp:Label ID="lblSiteUserName" runat="server" Text="" CssClass=""></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navbar-right">
+                            <div class="col-md-2">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <asp:Button ID="btnSignOut" runat="server" Text="SignOut" CssClass="btn btn-primary" OnClick="btnSignOut_Click" Visible="true"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

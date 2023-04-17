@@ -7,15 +7,15 @@
         <div class="col-md-6">
             <div class="container">
                 <br />
-                <asp:Label ID="lblDeleteFail" runat="server" ForeColor="Red" Text="Label"></asp:Label>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="RegistrationNum" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" Height="176px" Width="525px" OnRowDeleting="GridView1_RowDeleting">
+                <asp:Label ID="lblDeleteFail" runat="server" ForeColor="Red" Text="Label" Visible="False"></asp:Label>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="RegistrationNum" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" Height="176px" Width="525px" OnRowDeleting="GridView1_RowDeleting" CssClass="table table-bordered table-striped">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                        <asp:BoundField DataField="RegistrationNum" HeaderText="RegistrationNum" ReadOnly="True" SortExpression="RegistrationNum" />
+                        <asp:BoundField DataField="RegistrationNum" HeaderText="Car Number" ReadOnly="True" SortExpression="RegistrationNum" />
                         <asp:BoundField DataField="Colour" HeaderText="Colour" SortExpression="Colour" />
                         <asp:BoundField DataField="Brand" HeaderText="Brand" SortExpression="Brand" />
-                        <asp:BoundField DataField="SeatSize" HeaderText="SeatSize" SortExpression="SeatSize" />
+                        <asp:BoundField DataField="SeatSize" HeaderText="Seat Size" SortExpression="SeatSize" />
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
