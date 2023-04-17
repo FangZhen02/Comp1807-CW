@@ -2,14 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1><strong>Update Booking Status</strong></h1>
     <div><h2>Booking table</h2></div>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="BookingDetailsID" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="BookingDetailsID" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-striped">
         <Columns>
-            <asp:BoundField DataField="PasName" HeaderText="PasName" SortExpression="PasName" />
-            <asp:BoundField DataField="DateTime" HeaderText="DateTime" SortExpression="DateTime" />
+            <asp:BoundField DataField="PasName" HeaderText="Passenger Name" SortExpression="PasName" />
+            <asp:BoundField DataField="DateTime" HeaderText="Date/Time" SortExpression="DateTime" />
             <asp:BoundField DataField="Service" HeaderText="Service" SortExpression="Service" />
             <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
-            <asp:BoundField DataField="RegistrationNum" HeaderText="RegistrationNum" SortExpression="RegistrationNum" />
-            <asp:BoundField DataField="BookingDetailsID" HeaderText="BookingDetailsID" SortExpression="BookingDetailsID" InsertVisible="False" ReadOnly="True" />
+            <asp:BoundField DataField="RegistrationNum" HeaderText="Car Number" SortExpression="RegistrationNum" />
+            <asp:BoundField DataField="BookingDetailsID" HeaderText="Booking ID" SortExpression="BookingDetailsID" InsertVisible="False" ReadOnly="True" />
         </Columns>
         <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
         <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />

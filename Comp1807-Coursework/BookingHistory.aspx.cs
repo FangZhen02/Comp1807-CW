@@ -23,7 +23,7 @@ namespace Comp1807_Coursework
             string dbPath = Server.MapPath("~/App_Data/COMP1807_CW.accdb");
             string connString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dbPath};Persist Security Info=False;";
 
-            string query = "SELECT [Booking.BookingDetailsID] as [BookingID], [Booking.PasName] as [Passenger Name], [DateTime], [Service], [PickUp] as [Pick Up], [Destination], [FlightNumber] as [Flight number], [Status], [Booking.RegistrationNum] as [Car number], [Minicab.Colour] as [Colour], [Minicab.Brand] as [Brand], [Driver.DriverName] as [Driver]" +
+            string query = "SELECT [Booking.BookingDetailsID] as [Booking ID], [Booking.PasName] as [Passenger Name], [DateTime] as [Date/Time], [Service], [PickUp] as [Pick Up], [Destination], [FlightNumber] as [Flight number], [Status], [Booking.RegistrationNum] as [Car number], [Minicab.Colour] as [Colour], [Minicab.Brand] as [Brand], [Driver.DriverName] as [Driver]" +
                            "FROM ((Booking INNER JOIN Minicab ON Booking.RegistrationNum = Minicab.RegistrationNum) " +
                            "INNER JOIN Driver ON Booking.DriverID = Driver.DriverID) " +
                            "WHERE Booking.CustID = @UserID";

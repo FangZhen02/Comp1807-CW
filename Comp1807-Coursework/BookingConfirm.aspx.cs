@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.Net;
+using System.Net.Mail;
 
 namespace Comp1807_Coursework
 {
@@ -67,6 +69,43 @@ namespace Comp1807_Coursework
                 string driverName = resultDriver.ToString();
                 lblDriver.Text = driverName;
 
+
+
+                string query3 = $"SELECT Email FROM Customer WHERE CustID = {userID}";
+                OleDbCommand command = new OleDbCommand(query3, connection);
+                object result = command.ExecuteScalar();
+                string email = result.ToString();
+                Session["email"] = email;
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("privatehiresup@gmail.com");
+                mail.To.Add(email);
+                mail.Subject = "Payment Receipt";
+                mail.Body = "Thank you for your payment. Your booking details are as follows:\n\n" +
+                    "Passenger Name: " + lblPassengerName.Text + "\n" +
+                    "Service Type: " + lblService.Text + "\n" +
+                    "Distance: " + lblDistance.Text + "\n" +
+                    "Pickup Location: " + PickUp.Text + "\n" +
+                    "Destination: " + Destination.Text + "\n" +
+                    "Date: " + Date.Text + "\n" +
+                    "Minicab: " + minicab.Text + "\n" +
+                    "Flight Number: " + lblFlight.Text + "\n" +
+                    "Total Price: " + lblTotal.Text + "\n\n" +
+                    "Driver Name: " + lblDriver.Text + "\n" +
+                    "Car Number: " + minicabID + "\n" +
+                    "Car Brand: " + lblMinicab.Text + "\n" +
+                    "Car Colour: " + lblMiniColor.Text + "\n"+
+                    "Thank you for choosing our service. Have a safe journey!";
+                mail.IsBodyHtml = false;
+
+                SmtpClient smtp = new SmtpClient();
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 587;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential("privatehiresup@gmail.com", "gcwozivqooacudur");
+                smtp.EnableSsl = true;
+                smtp.Send(mail);
+                
                 connection.Close();
             }
             

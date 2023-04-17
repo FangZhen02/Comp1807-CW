@@ -9,10 +9,10 @@
                 <br />
                 <asp:Label ID="lblDeleteFail" runat="server" ForeColor="Red" Text="Row cannot be deleted because the driver has a booking assigned" Visible="False"></asp:Label>
                 
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="DriverID" DataSourceID="SqlDataSource2" GridLines="Horizontal" Height="185px" Width="425px" OnRowDeleting="GridView1_RowDeleting" >
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="DriverID" DataSourceID="SqlDataSource2" GridLines="Horizontal" Height="185px" Width="425px" OnRowDeleting="GridView1_RowDeleting" CssClass="table table-bordered table-striped" >
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                        <asp:BoundField DataField="DriverName" HeaderText="DriverName" SortExpression="DriverName" />
+                        <asp:BoundField DataField="DriverName" HeaderText="Driver Name" SortExpression="DriverName" />
                         <asp:BoundField DataField="Contact" HeaderText="Contact" SortExpression="Contact" />
                     </Columns>
                     <FooterStyle BackColor="White" ForeColor="#333333" />
