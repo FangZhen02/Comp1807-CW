@@ -103,5 +103,16 @@ namespace Comp1807_Coursework
         {
             Response.Redirect("AddMinicab.aspx");
         }
+
+        protected void btnRegisterCustomer_Click(object sender, EventArgs e)
+        {
+            Session["usertype"] = usertype;
+            Response.Redirect("SignUp.aspx");
+        }
+
+        protected void btnUpdateStatus_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UpdateStatus.aspx");
+        }
     }
 }

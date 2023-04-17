@@ -10,9 +10,20 @@ namespace Comp1807_Coursework
 {
     public partial class SiteMaster : MasterPage
     {
-
+        private string usertype;
         protected void Page_Load(object sender, EventArgs e)
         {
+            usertype = (string)Session["usertype"];
+
+            if (usertype == "customer")
+            {
+                bookingHistoryItem.Visible = true;
+            }
+            else
+            {
+                bookingHistoryItem.Visible = false; 
+            }
+
             lblSiteUserName.ForeColor = System.Drawing.Color.White;
             string username = (string)Session["username"];
             if (username == null || username == "")

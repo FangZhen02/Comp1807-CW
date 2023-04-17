@@ -14,9 +14,11 @@ namespace Comp1807_Coursework
     public partial class BookingHistory : System.Web.UI.Page
     {
         private string userID;
+        private string usertype;
         protected void Page_Load(object sender, EventArgs e)
         {
             userID = (string)Session["userID"];
+            usertype = (string)Session["usertype"];
 
             string dbPath = Server.MapPath("~/App_Data/COMP1807_CW.accdb");
             string connString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dbPath};Persist Security Info=False;";
@@ -37,7 +39,17 @@ namespace Comp1807_Coursework
                 GridView1.DataSource = dataTable;
                 GridView1.DataBind();
             }
-            
+
+            //Page.Form.DefaultButton = txtDateTime.UniqueID;
+            if (!IsPostBack)
+            {
+                DateTime minDateTime = DateTime.Now.AddHours(24);
+                DateTime maxDateTime = DateTime.Now.AddDays(90);
+
+                txtDateTime.Attributes.Add("min", minDateTime.ToString("yyyy-MM-dd HH:mm"));
+                txtDateTime.Attributes.Add("max", maxDateTime.ToString("yyyy-MM-dd HH:mm"));
+            }
+
         }
 
 
@@ -142,6 +154,36 @@ namespace Comp1807_Coursework
                     }
                 }
             }
+        }
+
+        protected void btnChangeTime_Click(object sender, EventArgs e)
+        {
+            string bookingID = DropDownList1.SelectedValue;
+            string DateTime = txtDateTime.Text;
+            DateTime = DateTime.Replace("T", " ");
+
+
+            string dbPath = Server.MapPath("~/App_Data/COMP1807_CW.accdb");
+            string connString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dbPath};Persist Security Info=False;";
+
+            string query3 = "UPDATE Booking SET [DateTime] = @NewTime WHERE BookingDetailsID = @BookingID";
+
+            using (OleDbConnection connection3 = new OleDbConnection(connString))
+            {
+                OleDbCommand command3 = new OleDbCommand(query3, connection3);
+                command3.Parameters.AddWithValue("@NewTime", DateTime);
+                command3.Parameters.AddWithValue("@BookingID", DropDownList1.SelectedValue);
+
+                connection3.Open();
+                command3.ExecuteNonQuery();
+                connection3.Close();
+            }
+
+            string message = "Changes made successfully";
+            string script = "if (window.confirm('" + message + "')) { window.location.href = 'BookingHistory.aspx'; }";
+            ClientScript.RegisterStartupScript(this.GetType(), "redirect", script, true);
+
+
         }
     }
 }

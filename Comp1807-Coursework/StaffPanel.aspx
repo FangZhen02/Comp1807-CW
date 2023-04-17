@@ -45,12 +45,12 @@
 
                 <div class="col-md-6"style="text-align:center">
                     <asp:Image ID="register" runat="server" ImageUrl="~/Resource/add-user.png" Width="60" Height="60" /><br /><br />
-                    <asp:Button ID="btnRegisterCustomer" runat="server" Text="Customer Register" CssClass="btn btn-primary btn-lg" Width="202px"/>
+                    <asp:Button ID="btnRegisterCustomer" runat="server" Text="Customer Register" CssClass="btn btn-primary btn-lg" Width="202px" OnClick="btnRegisterCustomer_Click"/>
                 </div>
 
                 <div class="col-md-6"style="text-align:center">
                     <asp:Image ID="BookingStatus" runat="server" ImageUrl="~/Resource/status.png" Width="60" Height="60" /><br /><br />
-                    <asp:Button ID="btnUpdateStatus" runat="server" Text="Update Status" CssClass="btn btn-primary btn-lg" Width="202px"/>
+                    <asp:Button ID="btnUpdateStatus" runat="server" Text="Update Status" CssClass="btn btn-primary btn-lg" Width="202px" OnClick="btnUpdateStatus_Click"/>
                 </div>
             </div>
         </div>

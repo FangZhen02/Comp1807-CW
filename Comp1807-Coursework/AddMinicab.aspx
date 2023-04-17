@@ -6,16 +6,16 @@
     <div class="row">
         <div class="col-md-6">
             <div class="container">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="RegistrationNumber" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="176px" Width="525px">
+                <br />
+                <asp:Label ID="lblDeleteFail" runat="server" ForeColor="Red" Text="Label"></asp:Label>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="RegistrationNum" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" Height="176px" Width="525px" OnRowDeleting="GridView1_RowDeleting">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                        <asp:BoundField DataField="RegistrationNumber" HeaderText="RegistrationNumber" InsertVisible="False" ReadOnly="True" SortExpression="RegistrationNumber" />
+                        <asp:BoundField DataField="RegistrationNum" HeaderText="RegistrationNum" ReadOnly="True" SortExpression="RegistrationNum" />
                         <asp:BoundField DataField="Colour" HeaderText="Colour" SortExpression="Colour" />
                         <asp:BoundField DataField="Brand" HeaderText="Brand" SortExpression="Brand" />
                         <asp:BoundField DataField="SeatSize" HeaderText="SeatSize" SortExpression="SeatSize" />
-                        <asp:CheckBoxField DataField="Availability" HeaderText="Availability" SortExpression="Availability" Visible="False" />
-                        <asp:BoundField DataField="BookingID" HeaderText="BookingID" SortExpression="BookingID" Visible="False" />
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -28,25 +28,23 @@
                     <SortedDescendingCellStyle BackColor="#D4DFE1" />
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1 %>" DeleteCommand="DELETE FROM [Minicab] WHERE [RegistrationNumber] = ?" InsertCommand="INSERT INTO [Minicab] ([RegistrationNumber], [Colour], [Brand], [SeatSize], [Availability], [BookingID]) VALUES (?, ?, ?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString1.ProviderName %>" SelectCommand="SELECT * FROM [Minicab]" UpdateCommand="UPDATE [Minicab] SET [Colour] = ?, [Brand] = ?, [SeatSize] = ?, [Availability] = ?, [BookingID] = ? WHERE [RegistrationNumber] = ?">
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1 %>" DeleteCommand="DELETE FROM [Minicab] WHERE [RegistrationNum] = ?" InsertCommand="INSERT INTO [Minicab] ([RegistrationNum], [Colour], [Brand], [SeatSize], [Availability]) VALUES (?, ?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString1.ProviderName %>" SelectCommand="SELECT * FROM [Minicab]" UpdateCommand="UPDATE [Minicab] SET [Colour] = ?, [Brand] = ?, [SeatSize] = ?, [Availability] = ? WHERE [RegistrationNum] = ?">
                     <DeleteParameters>
-                        <asp:Parameter Name="RegistrationNumber" Type="Int32" />
+                        <asp:Parameter Name="RegistrationNum" Type="String" />
                     </DeleteParameters>
                     <InsertParameters>
-                        <asp:Parameter Name="RegistrationNumber" Type="Int32" />
+                        <asp:Parameter Name="RegistrationNum" Type="String" />
                         <asp:Parameter Name="Colour" Type="String" />
                         <asp:Parameter Name="Brand" Type="String" />
                         <asp:Parameter Name="SeatSize" Type="Int32" />
                         <asp:Parameter Name="Availability" Type="Boolean" />
-                        <asp:Parameter Name="BookingID" Type="Int32" />
                     </InsertParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="Colour" Type="String" />
                         <asp:Parameter Name="Brand" Type="String" />
                         <asp:Parameter Name="SeatSize" Type="Int32" />
                         <asp:Parameter Name="Availability" Type="Boolean" />
-                        <asp:Parameter Name="BookingID" Type="Int32" />
-                        <asp:Parameter Name="RegistrationNumber" Type="Int32" />
+                        <asp:Parameter Name="RegistrationNum" Type="String" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
             </div>
